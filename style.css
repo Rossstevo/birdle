@@ -57,8 +57,9 @@ input {
     margin-top: 40px;
     border: 2px solid black;
     width: 200px;
-    height: 20px;
+    height: 30px;
     text-align: center;
+    font-size: 18px;
 }
 
 button {
