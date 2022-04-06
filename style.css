@@ -19,7 +19,7 @@ body {
 .box {
     border: 3px solid black;
     position: relative;
-    /* bottom: 40px; */
+    bottom: 40px;
     width: 252px;
     height: 378px;
     background-image: url("images/robin2.png");
