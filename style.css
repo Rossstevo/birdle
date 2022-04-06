@@ -54,14 +54,14 @@ body {
 }
 
 input {
-    margin-top: 40px;
+    margin-top: 20px;
     border: 2px solid black;
     width: 200px;
     height: 30px;
     text-align: center;
     font-size: 18px;
 }
-
+ 
 button {
     margin-top: 10px;
     border: 2px solid black;
@@ -75,7 +75,7 @@ button {
 }
 
 .score-container {
-    margin-top: 20px;
+    margin-top: 5px;
     height: 25px;
     width: 200px;
     display: flex;
