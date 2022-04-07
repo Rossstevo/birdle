@@ -115,12 +115,10 @@ function submit() {
     toggle = true;
     //make answer lower case
     let guess = document.querySelector('input').value.toLowerCase();
-    if (guess = '') {
-        console.log("attempt")
-    } else
-
+    
 
         if (answer === guess) {
+            console.log("correct")
             modalWin.style.display = "block";
         } else {
             lives--;
