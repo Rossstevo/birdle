@@ -1,6 +1,7 @@
 
 let count = 0
 let lives = 5;
+let capitalAnswer = "David Bowie"
 let answer = "david bowie"
 let toggle = true;
 
@@ -16,7 +17,7 @@ let toggle = true;
 console.log("toggle count = " + toggle)
 console.log("count = " + count)
 console.log("lives = " + lives)
-document.getElementById("answer").innerHTML = answer;
+document.getElementById("answer").innerHTML = capitalAnswer;
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 // document.getElementById("lives").innerHTML = lives;
@@ -209,7 +210,6 @@ function submit() {
 
 
     if (answer === guess) {
-        console.log("yuppers")
         modalWin.style.display = "block";
     } else {
         lives--;
