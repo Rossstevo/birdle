@@ -1,6 +1,6 @@
 let count = 0
 let lives = 5;
-let answer = "robin"
+let answer = "michael jordan"
 let toggle = true;
 console.log("toggle count = " + toggle)
 console.log("count = " + count)
