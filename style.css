@@ -16,6 +16,10 @@ body {
     flex-direction: column;
 }
 
+.p {
+  color: coral;
+}
+
 .box {
     border: 3px solid black;
     position: relative;
@@ -69,12 +73,14 @@ body {
 }
 
 input {
+  position: relative;
+  bottom: 30px;
     margin-top: 20px;
     border: 2px solid black;
     width: 220px;
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
  
 button {
