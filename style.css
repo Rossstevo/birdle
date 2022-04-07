@@ -98,6 +98,30 @@ h1{
     
 }
 
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  width: 50px;
+  padding: 5px;
+  height: 20px;
+  color: whitesmoke;
+  font-family: helvetica;
+  text-decoration: none;
+  font-size: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #52b788;
+}
+
+a {
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+
+
 /* -------------------- modal win  */
 
 .modalWin {
@@ -118,7 +142,7 @@ h1{
     background-color: #fefefe;
     margin: 60% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     width: 80%; /* Could be more or less, depending on screen size */
     text-align:center;
     display: flex;
