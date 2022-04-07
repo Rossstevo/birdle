@@ -5,12 +5,12 @@ let answer = "david bowie"
 let toggle = true;
 
 //watsap share feature 
-const linkStart = "whatsapp://send?text=I got todays Peeple in "
-const linkEnd = "https://sparkly-mandazi-c28bd8.netlify.app/"
-let linkText = linkStart + count + linkEnd;
-console.log(linkText);
-const link = document.getElementById("link");
-document.getElementById("link").innerHTML = link
+// const linkStart = "whatsapp://send?text=I got todays Peeple in "
+// const linkEnd = "https://sparkly-mandazi-c28bd8.netlify.app/"
+// let linkText = linkStart + count + linkEnd;
+// console.log(linkText);
+// const link = document.getElementById("link");
+// document.getElementById("link").innerHTML = link
 
 
 console.log("toggle count = " + toggle)
