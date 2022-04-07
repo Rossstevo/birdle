@@ -72,9 +72,27 @@ button {
     font-size: 16px; 
 }
 
-.answer {
+.answer { 
+    
     font-weight: bold;
 }
+
+.peep {
+  border: 2px solid black;
+  padding: 5px;
+  position: relative;
+  color: black;
+  bottom: 30px;
+  width: 50px;
+  text-align: center;
+  background: coral;
+}
+
+
+
+
+
+
 
 .score-container {
   

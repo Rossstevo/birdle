@@ -1,41 +1,4 @@
-
-let count = 0
-let lives = 5;
-let capitalAnswer = "David Bowie"
-let answer = "david bowie"
-let toggle = true;
-
-//watsap share feature 
-// const linkStart = "whatsapp://send?text=I got todays Peeple in "
-// const linkEnd = "https://sparkly-mandazi-c28bd8.netlify.app/"
-// let linkText = linkStart + count + linkEnd;
-// console.log(linkText);
-// const link = document.getElementById("link");
-// document.getElementById("link").innerHTML = link
-
-
-console.log("toggle count = " + toggle)
-console.log("count = " + count)
-console.log("lives = " + lives)
-document.getElementById("answer").innerHTML = capitalAnswer;
-const modalWin = document.getElementById("myModalWin");
-const modalFail = document.getElementById("myModalFail");
-// document.getElementById("lives").innerHTML = lives;
-
-
-const one = document.getElementById("one");
-const two = document.getElementById("two");
-const three = document.getElementById("three");
-const four = document.getElementById("four");
-const five = document.getElementById("five");
-
-
-
-let current = '';
-
-
-
-//---------------function for squares-----
+//---------------get squares -----
 const square1 = document.getElementById("square1");
 const square2 = document.getElementById("square2");
 const square3 = document.getElementById("square3");
@@ -61,139 +24,85 @@ const square22 = document.getElementById("square22");
 const square23 = document.getElementById("square23");
 const square24 = document.getElementById("square24");
 
-square1.addEventListener("click", test1);
-square2.addEventListener("click", test2);
-square3.addEventListener("click", test3);
-square4.addEventListener("click", test4);
-square5.addEventListener("click", test5);
-square6.addEventListener("click", test6);
-square7.addEventListener("click", test7);
-square8.addEventListener("click", test8);
-square9.addEventListener("click", test9);
-square10.addEventListener("click", test10);
-square11.addEventListener("click", test11);
-square12.addEventListener("click", test12);
-square13.addEventListener("click", test13);
-square14.addEventListener("click", test14);
-square15.addEventListener("click", test15);
-square16.addEventListener("click", test16);
-square17.addEventListener("click", test17);
-square18.addEventListener("click", test18);
-square19.addEventListener("click", test19);
-square20.addEventListener("click", test20);
-square21.addEventListener("click", test21);
-square22.addEventListener("click", test22);
-square23.addEventListener("click", test23);
-square24.addEventListener("click", test24);
 
-function test1() {
-    current = square1;
-    remove()
-}
-function test2() {
-    current = square2;
-    remove()
-}
-function test3() {
-    current = square3;
-    remove()
-}
-function test4() {
-    current = square4;
-    remove()
-}
-function test5() {
-    current = square5;
-    remove()
-}
-function test6() {
-    current = square6;
-    remove()
-}
-function test7() {
-    current = square7;
-    remove()
-}
-function test8() {
-    current = square8;
-    remove()
-}
-function test9() {
-    current = square9;
-    remove()
-}
-function test10() {
-    current = square10;
-    remove()
-}
-function test11() {
-    current = square11;
-    remove()
-}
-function test12() {
-current = square12;
-    remove()
-}
-function test13() {
-    current = square13;
-    remove()
-}
-function test14() {
-    current = square14;
-    remove()
-}
-function test15() {
-    current = square15;
-    remove()
-}
-function test16() {
-    current = square16;
-    remove()
-}
-function test17() {
-    current = square17;
-    remove()
-}
-function test18() {
-    current = square18;
-    remove()
-}
-function test19() {
-    current = square19;
-    remove()
-}
-function test20() {
-    current = square20;
-    remove()
-}
-function test21() {
-    current = square21;
-    remove()
-}
-function test22() {
-    current = square22;
-    remove()
-}
-function test23() {
-    current = square23;
-    remove()
-}
-function test24() {
-current = square24;
-    remove()
-}
+// ----------------------------
 
-// remove tile 
-function remove() {
+let count = 0
+let lives = 5;
+let capitalAnswer = "David Bowie"
+let answer = "david bowie"
+let toggle = true;
+
+
+
+
+console.log("toggle count = " + toggle)
+console.log("count = " + count)
+console.log("lives = " + lives)
+document.getElementById("answer").innerHTML = capitalAnswer;
+const modalWin = document.getElementById("myModalWin");
+const modalFail = document.getElementById("myModalFail");
+// document.getElementById("lives").innerHTML = lives;
+
+
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+
+
+
+let current = '';
+
+
+
+
+// ------------------ Peep reveal ------------------
+
+let peepArray = [square21, square19, square3, square10, square6]
+
+let peepCount = 0
+
+
+const peep = document.getElementById("peep");
+peep.addEventListener("click", peepReveal);
+
+function peepReveal() {
+    console.log("toggle count = " + toggle)
     if (toggle === false) {
         console.log("attempt to click")
     } else {
+
+
+        console.log("peeping...");
+        current = peepArray[0];
+
+        peepArray.shift()
+        console.log(peepArray);
+
+
+
         current.style.visibility = 'hidden'
+
         count++;
-        document.getElementById("counter").innerHTML = count
+        // document.getElementById("counter").innerHTML = count
         toggle = false;
+        console.log("toggle count = " + toggle)
     }
+
+
+
+
+
+
+
+
+
+
 }
+
+
 
 
 // -------------button answer checker ----
@@ -355,3 +264,161 @@ function submit() {
 //             toggle = false;
 //         }
 //     }
+
+
+
+
+
+// square1.addEventListener("click", test1);
+// square2.addEventListener("click", test2);
+// square3.addEventListener("click", test3);
+// square4.addEventListener("click", test4);
+// square5.addEventListener("click", test5);
+// square6.addEventListener("click", test6);
+// square7.addEventListener("click", test7);
+// square8.addEventListener("click", test8);
+// square9.addEventListener("click", test9);
+// square10.addEventListener("click", test10);
+// square11.addEventListener("click", test11);
+// square12.addEventListener("click", test12);
+// square13.addEventListener("click", test13);
+// square14.addEventListener("click", test14);
+// square15.addEventListener("click", test15);
+// square16.addEventListener("click", test16);
+// square17.addEventListener("click", test17);
+// square18.addEventListener("click", test18);
+// square19.addEventListener("click", test19);
+// square20.addEventListener("click", test20);
+// square21.addEventListener("click", test21);
+// square22.addEventListener("click", test22);
+// square23.addEventListener("click", test23);
+// square24.addEventListener("click", test24);
+
+
+
+
+// function test1() {
+    //     current = square1;
+    //     remove()
+    // }
+    // function test2() {
+    //     current = square2;
+    //     remove()
+    // }
+    // function test3() {
+    //     current = square3;
+    //     remove()
+    // }
+    // function test4() {
+    //     current = square4;
+    //     remove()
+    // }
+    // function test5() {
+    //     current = square5;
+    //     remove()
+    // }
+    // function test6() {
+    //     current = square6;
+    //     remove()
+    // }
+    // function test7() {
+    //     current = square7;
+    //     remove()
+    // }
+    // function test8() {
+    //     current = square8;
+    //     remove()
+    // }
+    // function test9() {
+    //     current = square9;
+    //     remove()
+    // }
+    // function test10() {
+    //     current = square10;
+    //     remove()
+    // }
+    // function test11() {
+    //     current = square11;
+    //     remove()
+    // }
+    // function test12() {
+    //     current = square12;
+    //     remove()
+    // }
+    // function test13() {
+    //     current = square13;
+    //     remove()
+    // }
+    // function test14() {
+    //     current = square14;
+    //     remove()
+    // }
+    // function test15() {
+    //     current = square15;
+    //     remove()
+    // }
+    // function test16() {
+    //     current = square16;
+    //     remove()
+    // }
+    // function test17() {
+    //     current = square17;
+    //     remove()
+    // }
+    // function test18() {
+    //     current = square18;
+    //     remove()
+    // }
+    // function test19() {
+    //     current = square19;
+    //     remove()
+    // }
+    // function test20() {
+    //     current = square20;
+    //     remove()
+    // }
+    // function test21() {
+    //     current = square21;
+    //     remove()
+    // }
+    // function test22() {
+    //     current = square22;
+    //     remove()
+    // }
+    // function test23() {
+    //     current = square23;
+    //     remove()
+    // }
+    // function test24() {
+    // current = square24;
+    //     remove()
+    // }
+
+
+
+
+    //watsap share feature 
+// const linkStart = "whatsapp://send?text=I got todays Peeple in "
+// const linkEnd = "https://sparkly-mandazi-c28bd8.netlify.app/"
+// let linkText = linkStart + count + linkEnd;
+// console.log(linkText);
+// const link = document.getElementById("link");
+// document.getElementById("link").innerHTML = link
+
+
+// ------------------ Peep reveal ------------------
+
+// 
+
+
+// // remove tile 
+// function remove() {
+//     if (toggle === false) {
+//         console.log("attempt to click")
+//     } else {
+//         current.style.visibility = 'hidden'
+//         count++;
+//         document.getElementById("counter").innerHTML = count
+//         toggle = false;
+//     }
+// }
