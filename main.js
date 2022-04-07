@@ -32,6 +32,7 @@ let lives = 5;
 let capitalAnswer = "David Bowie"
 let answer = "david bowie"
 let toggle = true;
+let submitToggle = true;
 
 
 
@@ -62,7 +63,6 @@ let current = '';
 
 let peepArray = [square21, square19, square3, square10, square6]
 
-let peepCount = 0
 
 
 const peep = document.getElementById("peep");
@@ -115,14 +115,16 @@ function submit() {
     toggle = true;
     //make answer lower case
     let guess = document.querySelector('input').value.toLowerCase();
+    if (guess = '') {
+        console.log("attempt")
+    } else
 
 
-
-    if (answer === guess) {
-        modalWin.style.display = "block";
-    } else {
-        lives--;
-    }
+        if (answer === guess) {
+            modalWin.style.display = "block";
+        } else {
+            lives--;
+        }
     // document.getElementById("lives").innerHTML = lives;
     if (lives === 0) {
         modalFail.style.display = "block";
