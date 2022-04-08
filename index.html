@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
+<!--Nice to see you here. Well...unless you came here looking for the answers in which case get out of here!!! But seriously you know you can hire me, right? drop me an email @ Ross.w.stevenson@gmail.com  ------------------>
 <body>
 
     <h1>Peeple </h1>
     <div class = "github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
+
+
+<!----------------- Main grid ------------------>
 
     <div class="container">
         <div class="box">
@@ -46,7 +49,7 @@
 
         <div class = "peep" id= "peep">Peep <i class="material-icons" style="font-size:20px;color:black;">visibility</i></div>
 
-
+<!----------------- Score square ------------------>
         <div class="score-container">
             <div id="one" class="score one"></div>
             <div id="two" class="score two"></div>
@@ -54,6 +57,8 @@
             <div id="four" class="score four"></div>
             <div id="five" class="score five"></div>
         </div>
+
+<!----------------- input and submit button ------------------>
 
         <div class = "input-container">
         <input id="input" type="text" placeholder="Tom Waits" onfocus="value=''">
@@ -70,6 +75,47 @@
             <p>Bingo! The answer is 
                 <span class="answer" id="answer"></span>
             </p>
+            
+            <p id = "firstAttempt" class = firstAttempt>
+                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+            </p>
+            <p id = "secondAttempt" class = "secondAttempt">
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+            </p>
+            <p id = "thirdAttempt" class = thirdAttempt>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+            </p>
+            <p id = "fourthAttempt" class = "fourthAttempt">
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+            </p>
+            <p id = "fifthAttempt" class = "fifthAttempt">
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+            </p>
+            
+            
+
+
+
                 <!-- <span id="counter"></span> -->
             
             </p>
@@ -91,6 +137,13 @@
             <p>You ran out of lives! The answer is</p>
             <h3 id = "failAnswer"></h3>
             <p><span class="answer" id="answer"></span></p>
+            <p id = "failAttempt" class = "failAttempt">
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+            </p>
             <div class="box-answer"></div>
             <div><a href="whatsapp://send?text=I was beat by today's Peeple! https://www.peeple.fun" data-action="share/whatsapp/share"
                 target="_blank">

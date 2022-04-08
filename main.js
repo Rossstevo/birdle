@@ -25,12 +25,12 @@ const square23 = document.getElementById("square23");
 const square24 = document.getElementById("square24");
 
 
-// -------------------dailys---------//
+
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Martin Freeman" /*-----------------------------------change this line daily*/
-let answer = capitalAnswer.toLocaleLowerCase() /*-----------------------------------change this line daily*/
+let capitalAnswer = "Martin Freeman" /*----------------------------------------------change this line daily*/
+let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
 let current = '';
@@ -112,6 +112,30 @@ function submit() {
     if (answer === guess) {
         console.log("correct")
         modalWin.style.display = "block";
+        if (lives === 5) {   
+            firstAttempt.style.display = "block";
+        }
+        if (lives === 4) {   
+            secondAttempt.style.display = "block";
+        }
+        if (lives === 3) {   
+            thirdAttempt.style.display = "block";
+        }
+        if (lives === 2) {   
+            fourthAttempt.style.display = "block";
+        }
+        if (lives === 1) {   
+            fifthAttempt.style.display = "block";
+        }
+        if (lives === 0) {   
+            failAttempt.style.display = "block";
+        }
+
+
+
+
+
+
     } else {
         lives--;
     }
