@@ -48,6 +48,7 @@ const modalFail = document.getElementById("myModalFail");
 
 
 const first = document.getElementById("first");
+const second = document.getElementById("second");
 
 
 
@@ -127,7 +128,7 @@ function submit() {
         }
         if (lives === 4) {   
             secondAttempt.style.display = "block";
-            secondWhatsapp.style.display = "block";
+            second.style.display = "block";
 
         }
         if (lives === 3) {   
