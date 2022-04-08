@@ -30,7 +30,7 @@ const square24 = document.getElementById("square24");
 let count = 0
 let lives = 5;
 let capitalAnswer = "Martin Freeman"
-let answer = "Martin Freeman"
+let answer = "martin freeman"
 let toggle = true;
 let submitToggle = true;
 
