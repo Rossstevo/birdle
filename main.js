@@ -29,8 +29,8 @@ const square24 = document.getElementById("square24");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "David Bowie"
-let answer = "david bowie"
+let capitalAnswer = "Martin Freeman"
+let answer = "Martin Freeman"
 let toggle = true;
 let submitToggle = true;
 
@@ -61,7 +61,7 @@ let current = '';
 
 // ------------------ Peep reveal ------------------
 
-let peepArray = [square21, square19, square3, square10, square6]
+let peepArray = [square11, square14, square7, square20, square1]
 
 
 
