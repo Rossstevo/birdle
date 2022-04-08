@@ -115,14 +115,14 @@ function submit() {
     toggle = true;
     //make answer lower case
     let guess = document.querySelector('input').value.toLowerCase();
-    
 
-        if (answer === guess) {
-            console.log("correct")
-            modalWin.style.display = "block";
-        } else {
-            lives--;
-        }
+
+    if (answer === guess) {
+        console.log("correct")
+        modalWin.style.display = "block";
+    } else {
+        lives--;
+    }
     // document.getElementById("lives").innerHTML = lives;
     if (lives === 0) {
         modalFail.style.display = "block";
@@ -152,7 +152,7 @@ function submit() {
 
 }
 
-
+// -----------------Modal--------------//
 
 
 const close = document.getElementById("cross");
@@ -160,7 +160,7 @@ close.addEventListener("click", closeModal);
 
 function closeModal() {
     console.log("close")
-        modalWin.style.display = "none";
+    modalWin.style.display = "none";
 
 }
 
@@ -169,7 +169,7 @@ closeFail.addEventListener("click", closeModalFail);
 
 function closeModalFail() {
     console.log("close")
-        modalFail.style.display = "none";
+    modalFail.style.display = "none";
 
 }
 
