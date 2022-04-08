@@ -29,7 +29,7 @@ const square24 = document.getElementById("square24");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Martin Freeman" /*----------------------------------------------change this line daily*/
+let capitalAnswer = "Amy Winehouse" /*----------------------------------------------change this line daily*/
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -74,7 +74,7 @@ const five = document.getElementById("five");
 
 // ------------------ Peep reveal ------------------
 
-let peepArray = [square11, square14, square7, square20, square1]   /*-----------------------------------change this line daily*/
+let peepArray = [square13, square4, square11, square20, square6]   /*-----------------------------------change this line daily*/
 
 
 
@@ -141,6 +141,7 @@ function submit() {
         if (lives === 2) {   
             fourthAttempt.style.display = "block";
         }   fourth.style.display = "block";
+
         if (lives === 1) {   
             fifthAttempt.style.display = "block";
             fifth.style.display = "block";
