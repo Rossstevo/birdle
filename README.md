@@ -29,4 +29,4 @@ Commits. When the pressure hits, I am not being specific enough with my commit m
 
 # coolest feature?
 
-The tile-reveal formular was a fun problem to solve and ended up being pretty simple. I made an array of variables [tiles14, tile7, tile22, tile 16, tile 1]. When the user clicks 'peep' the first item in teh array is used then discarded. 
+The tile-reveal formular was a fun problem to solve and ended up being pretty simple. I made an array of variables [tiles14, tile7, tile22, tile 16, tile 1]. When the user clicks 'peep' the first item in the array is used then discarded. Each day I set the array based on which tiles I think will make the game interesting. 
