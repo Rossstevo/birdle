@@ -21,13 +21,16 @@ Pretty well so far.
 
 ## What have I learned?
 
-Loads! Coding under pressure, hosting a website, problem solving.
+Loads! Coding under pressure, hosting a website, Whatsapp sharing. 
 
 ## failures?
 
 Commits. When the pressure hits, I am not being specific enough with my commit messages.
-Pushing to master. 
+Pushing to master. Self explanatory. 
 
 ## coolest feature?
 
 The tile-reveal formular was a fun problem to solve and ended up being pretty simple. I made an array of variables [tiles14, tile7, tile22, tile 16, tile 1]. When the user clicks 'peep' the first item in the array is used then discarded. Each day I set the array based on which tiles I think will make the game interesting. 
+
+## Where I need help...
+The Whatsapp score-sharing feature is pretty confusing (my solution is long winded but it works). I can't insert a span into the href so I had to write different href tags and use an if statement to hide/reveal each tag. If anyone can help please let me know. 
