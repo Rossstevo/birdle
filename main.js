@@ -46,6 +46,14 @@ document.getElementById("answer").innerHTML = capitalAnswer;
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
+
+const first = document.getElementById("first");
+
+
+
+
+
+
 // -------------------score cubes---------//
 const one = document.getElementById("one");
 const two = document.getElementById("two");
@@ -114,9 +122,13 @@ function submit() {
         modalWin.style.display = "block";
         if (lives === 5) {   
             firstAttempt.style.display = "block";
+            first.style.display = "block";
+            
         }
         if (lives === 4) {   
             secondAttempt.style.display = "block";
+            secondWhatsapp.style.display = "block";
+
         }
         if (lives === 3) {   
             thirdAttempt.style.display = "block";
