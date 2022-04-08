@@ -50,6 +50,8 @@ const modalFail = document.getElementById("myModalFail");
 const first = document.getElementById("first");
 const second = document.getElementById("second");
 const third = document.getElementById("third");
+const fourth = document.getElementById("fourth");
+const fifth = document.getElementById("fifth");
 
 
 
@@ -138,9 +140,10 @@ function submit() {
         }
         if (lives === 2) {   
             fourthAttempt.style.display = "block";
-        }
+        }   fourth.style.display = "block";
         if (lives === 1) {   
             fifthAttempt.style.display = "block";
+            fifth.style.display = "block";
         }
         if (lives === 0) {   
             failAttempt.style.display = "block";
