@@ -1,4 +1,4 @@
-//---------------get squares -----
+//---------------get squares -----//
 const square1 = document.getElementById("square1");
 const square2 = document.getElementById("square2");
 const square3 = document.getElementById("square3");
@@ -25,27 +25,28 @@ const square23 = document.getElementById("square23");
 const square24 = document.getElementById("square24");
 
 
-// ----------------------------
+// -------------------dailys---------//
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Martin Freeman"
-let answer = "martin freeman"
+let capitalAnswer = "Martin Freeman" /*-----------------------------------change this line daily*/
+let answer = "martin freeman" /*-----------------------------------change this line daily*/
 let toggle = true;
 let submitToggle = true;
+let current = '';
 
-
-
-
-console.log("toggle count = " + toggle)
-console.log("count = " + count)
-console.log("lives = " + lives)
+// put answer in models ---------------
+document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
+
+
+
+
+
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
-// document.getElementById("lives").innerHTML = lives;
 
-
+// -------------------score cubes---------//
 const one = document.getElementById("one");
 const two = document.getElementById("two");
 const three = document.getElementById("three");
@@ -54,14 +55,14 @@ const five = document.getElementById("five");
 
 
 
-let current = '';
+
 
 
 
 
 // ------------------ Peep reveal ------------------
 
-let peepArray = [square11, square14, square7, square20, square1]
+let peepArray = [square11, square14, square7, square20, square1]   /*-----------------------------------change this line daily*/
 
 
 
@@ -90,15 +91,6 @@ function peepReveal() {
         toggle = false;
         console.log("toggle count = " + toggle)
     }
-
-
-
-
-
-
-
-
-
 
 }
 
