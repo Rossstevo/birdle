@@ -155,8 +155,23 @@ function submit() {
 
 
 
+const close = document.getElementById("cross");
+close.addEventListener("click", closeModal);
 
+function closeModal() {
+    console.log("close")
+        modalWin.style.display = "none";
 
+}
+
+const closeFail = document.getElementById("crossFail");
+closeFail.addEventListener("click", closeModalFail);
+
+function closeModalFail() {
+    console.log("close")
+        modalFail.style.display = "none";
+
+}
 
 
 
