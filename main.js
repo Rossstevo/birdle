@@ -140,7 +140,8 @@ function submit() {
         }
         if (lives === 2) {   
             fourthAttempt.style.display = "block";
-        }   fourth.style.display = "block";
+          fourth.style.display = "block";
+        }
 
         if (lives === 1) {   
             fifthAttempt.style.display = "block";
