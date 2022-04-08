@@ -21,7 +21,7 @@ Pretty well so far.
 
 ## What have I learned?
 
-Loads. I've not coded to such pressure before. Knowing my code will be used and tested adds a sense of responsibility and de-bugging when the site is live is a real thrill. 
+Loads! Coding under pressure, hosting a website, problem solving.
 
 ## failures?
 
