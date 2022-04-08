@@ -49,6 +49,7 @@ const modalFail = document.getElementById("myModalFail");
 
 const first = document.getElementById("first");
 const second = document.getElementById("second");
+const third = document.getElementById("third");
 
 
 
@@ -133,6 +134,7 @@ function submit() {
         }
         if (lives === 3) {   
             thirdAttempt.style.display = "block";
+            third.style.display = "block";
         }
         if (lives === 2) {   
             fourthAttempt.style.display = "block";
