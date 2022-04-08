@@ -12,7 +12,7 @@ I initially wanted to make it for birds before realising the market was too smal
 
 ## What did you make it with?
 
-I used Vanilla JS. I wanted to launch the game quickly so I used vanilla JS. React would hae been better but my React de-bugging is not as hot as my JS. This turned out to be a good decision because once the site went live, I needed to do a lot of quick de-bugging
+I used Vanilla JS. I wanted to launch the game quickly so I used vanilla JS. React would have been better but my React de-bugging is not as hot as my JS. This turned out to be a good decision because once the site went live, I needed to do a lot of quick de-bugging
 I am hosting the site on Netlify. 
 
 ## How has it been received?
@@ -26,6 +26,7 @@ Loads! Coding under pressure, hosting a website, problem solving.
 ## failures?
 
 Commits. When the pressure hits, I am not being specific enough with my commit messages.
+Pushing to master. 
 
 ## coolest feature?
 
