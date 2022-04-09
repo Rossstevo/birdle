@@ -82,26 +82,14 @@ const peep = document.getElementById("peep");
 peep.addEventListener("click", peepReveal);
 
 function peepReveal() {
-    console.log("toggle count = " + toggle)
+    peep.style.visibility = 'hidden'
     if (toggle === false) {
-        console.log("attempt to click")
     } else {
-
-
-        console.log("peeping...");
         current = peepArray[0];
-
         peepArray.shift()
-        console.log(peepArray);
-
-
-
         current.style.visibility = 'hidden'
-
         count++;
-        // document.getElementById("counter").innerHTML = count
         toggle = false;
-        console.log("toggle count = " + toggle)
     }
 
 }
@@ -114,6 +102,10 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 function submit() {
+
+
+
+
 
 
     toggle = true;
@@ -152,11 +144,22 @@ function submit() {
         }
 
 
-
-
-
-
     } else {
+
+        if (toggle === false) {
+        } else {
+            current = peepArray[0];
+            peepArray.shift()
+            current.style.visibility = 'hidden'
+            count++;
+            toggle = false;
+        }
+
+
+
+
+
+
         lives--;
     }
     // document.getElementById("lives").innerHTML = lives;
@@ -183,10 +186,20 @@ function submit() {
     if (lives === 0) {
         five.style.background = "red";
     }
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // -----------------Modal--------------//
 
