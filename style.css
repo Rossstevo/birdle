@@ -125,9 +125,9 @@ button:active {
   position: relative;
   color: black;
   bottom: 30px;
-  width: 50px;
+  width: 80px;
   text-align: center;
-  background: coral;
+  background: #06d6a0;
   cursor: pointer;
   opacity: 0.9;
 
