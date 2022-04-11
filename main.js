@@ -74,7 +74,7 @@ const five = document.getElementById("five");
 
 // ------------------ Peep reveal ------------------
 
-let peepArray = [square3, square7, square9, square15, square13]   /*-----------------------------------change this line daily*/
+let peepArray = [square3, square7, square9, square10, square13]   /*-----------------------------------change this line daily*/
 
 
 
