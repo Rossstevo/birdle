@@ -35,7 +35,7 @@ let toggle = true;
 let submitToggle = true;
 let current = '';
 
-// put answer in models ---------------
+// ---------- put answer in models ---------------
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
 
@@ -45,6 +45,7 @@ document.getElementById("answer").innerHTML = capitalAnswer;
 
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
+
 
 
 const first = document.getElementById("first");
@@ -72,21 +73,21 @@ const five = document.getElementById("five");
 
 
 
-// ------------------ Peep reveal ------------------
+// ------------------ Start reveal ------------------
 
-let peepArray = [square3, square7, square9, square10, square13]   /*-----------------------------------change this line daily*/
+let tileArray = [square3, square7, square9, square10, square13]   /*-----------------------------------change this line daily*/
 
 
 
-const peep = document.getElementById("peep");
-peep.addEventListener("click", peepReveal);
+const start = document.getElementById("start");
+start.addEventListener("click", peepReveal);
 
 function peepReveal() {
-    peep.style.visibility = 'hidden';
+    start.style.visibility = 'hidden';
     if (toggle === false) {
     } else {
-        current = peepArray[0];
-        peepArray.shift();
+        current = tileArray[0];
+        tileArray.shift();
         current.style.visibility = 'hidden';
         // count++;
         toggle = false;
@@ -105,6 +106,7 @@ function submit() {
 
 
     toggle = true;
+
     //make answer lower case and remove last letter if it is a space 
     let guess = document.querySelector('input').value.toLowerCase();
     let last = guess.charAt(guess.length-1);
@@ -113,11 +115,10 @@ function submit() {
         guess = guess.substring(0, guess.length - 1);
         console.log("last = " + last)
         console.log("guess = " + guess)
-
     }
 
 
-
+    //correct answer 
     if (answer === guess) {
         console.log("correct")
         modalWin.style.display = "block";
@@ -154,9 +155,9 @@ function submit() {
 
         if (toggle === false) {
         } else {
-            current = peepArray[0];
-            peepArray.shift()
-            current.style.visibility = 'hidden'
+            current = tileArray[0];
+            tileArray.shift();
+            current.style.visibility = 'hidden';
             count++;
             toggle = false;
         }
