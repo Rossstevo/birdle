@@ -39,6 +39,10 @@ let current = '';
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
 
+
+
+
+
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
@@ -50,6 +54,10 @@ const fourth = document.getElementById("fourth");
 const fifth = document.getElementById("fifth");
 
 
+
+
+
+
 // -------------------score cubes---------//
 const one = document.getElementById("one");
 const two = document.getElementById("two");
@@ -57,10 +65,6 @@ const three = document.getElementById("three");
 const four = document.getElementById("four");
 const five = document.getElementById("five");
 
-
-// ---------------skip button-----------
-const skip = document.getElementById("skip-button")
-skip.addEventListener("click", submit);
 
 
 
@@ -78,12 +82,12 @@ const peep = document.getElementById("peep");
 peep.addEventListener("click", peepReveal);
 
 function peepReveal() {
-    peep.style.visibility = 'hidden'
+    peep.style.visibility = 'hidden';
     if (toggle === false) {
     } else {
         current = peepArray[0];
-        peepArray.shift()
-        current.style.visibility = 'hidden'
+        peepArray.shift();
+        current.style.visibility = 'hidden';
         // count++;
         toggle = false;
     }
@@ -91,7 +95,9 @@ function peepReveal() {
 }
 
 
-// -------------button answer checker ----//
+
+
+// -------------button answer checker ----
 const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
@@ -109,6 +115,8 @@ function submit() {
         console.log("guess = " + guess)
 
     }
+
+
 
     if (answer === guess) {
         console.log("correct")
@@ -141,6 +149,7 @@ function submit() {
             failAttempt.style.display = "block";
         }
 
+
     } else {
 
         if (toggle === false) {
@@ -152,13 +161,13 @@ function submit() {
             toggle = false;
         }
 
+
+
+
+
+
         lives--;
     }
-
-    
-
-
-
     // document.getElementById("lives").innerHTML = lives;
     if (lives === 0) {
         modalFail.style.display = "block";
@@ -198,7 +207,7 @@ function submit() {
 
 
 
-// -----------------Modal cross --------------//
+// -----------------Modal--------------//
 
 
 const close = document.getElementById("cross");
@@ -224,7 +233,7 @@ function closeModalFail() {
 
 
 
-//------------countdown timer----------------------//
+//------------countdown timer----------------------
 const countDownDate = new Date("April 11, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
@@ -247,6 +256,10 @@ const x = setInterval(function() {
   document.getElementById("timerWin").innerHTML = hours + ":"
   + minutes + ":" + seconds;
 //   document.getElementById("timerWin").innerHTML = "bananas";
+
+
+
+  
 
 }, 1000);
 
