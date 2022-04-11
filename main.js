@@ -29,7 +29,7 @@ const square24 = document.getElementById("square24");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Adele" /*----------------------------------------------change this line daily*/
+let capitalAnswer = "Helena Bonham Carter" /*----------------------------------------------change this line daily*/
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -74,7 +74,7 @@ const five = document.getElementById("five");
 
 // ------------------ Peep reveal ------------------
 
-let peepArray = [square7, square18, square3, square19, square20]   /*-----------------------------------change this line daily*/
+let peepArray = [square3, square7, square9, square15, square13]   /*-----------------------------------change this line daily*/
 
 
 
