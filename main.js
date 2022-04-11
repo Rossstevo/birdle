@@ -25,7 +25,7 @@ const square23 = document.getElementById("square23");
 const square24 = document.getElementById("square24");
 
 
-
+// variables 
 
 let count = 0
 let lives = 5;
@@ -35,7 +35,13 @@ let toggle = true;
 let submitToggle = true;
 let current = '';
 
-// ---------- put answer in models ---------------
+
+
+
+
+
+
+// put answer in models ---------------
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
 
@@ -45,7 +51,6 @@ document.getElementById("answer").innerHTML = capitalAnswer;
 
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
-
 
 
 const first = document.getElementById("first");
@@ -68,29 +73,41 @@ const five = document.getElementById("five");
 
 
 
+//order in which tiles will be revealed 
+let tileArray = [square3, square7, square9, square10, square21, square1]   /*-----------------------------------change this line daily*/
 
 
+// bug finding 
+console.log(tileArray)
+console.log("Count at start = " + count)
+console.log("Lives at start = " + lives)
 
 
-
-// ------------------ Start reveal ------------------
-
-let tileArray = [square3, square7, square9, square10, square13]   /*-----------------------------------change this line daily*/
+const skip = document.getElementById("skip-button");
+skip.addEventListener("click", submit);
 
 
-
+//Start button: get ID 
 const start = document.getElementById("start");
-start.addEventListener("click", peepReveal);
+start.addEventListener("click", firstTileReveal);
 
-function peepReveal() {
+//Start button: function. 
+
+function firstTileReveal() {
+    //remove start button
     start.style.visibility = 'hidden';
     if (toggle === false) {
     } else {
+    // set current to first tile in array, hide this tile then remove it from the array
         current = tileArray[0];
-        tileArray.shift();
+        console.log("tile array length: "+ tileArray.length);
         current.style.visibility = 'hidden';
-        // count++;
+        tileArray.shift();
         toggle = false;
+        console.log("START")
+        console.log(tileArray)
+        console.log("Count after start button = " + count)
+        console.log("Lives after start button = " + lives)
     }
 
 }
@@ -104,21 +121,19 @@ button.addEventListener("click", submit)
 
 function submit() {
 
-
+    console.log(tileArray)
     toggle = true;
 
-    //make answer lower case and remove last letter if it is a space 
+//make answer lower case and remove last letter if it is a space 
     let guess = document.querySelector('input').value.toLowerCase();
     let last = guess.charAt(guess.length-1);
-    console.log("last = " + last)
     if (last === " "){
         guess = guess.substring(0, guess.length - 1);
-        console.log("last = " + last)
-        console.log("guess = " + guess)
+        
     }
 
 
-    //correct answer 
+// If WIN display modal and set whatsapp text to the correct text 
     if (answer === guess) {
         console.log("correct")
         modalWin.style.display = "block";
@@ -126,12 +141,10 @@ function submit() {
         if (lives === 5) {   
             firstAttempt.style.display = "block";
             first.style.display = "block";
-            
         }
         if (lives === 4) {   
             secondAttempt.style.display = "block";
             second.style.display = "block";
-
         }
         if (lives === 3) {   
             thirdAttempt.style.display = "block";
@@ -141,7 +154,6 @@ function submit() {
             fourthAttempt.style.display = "block";
           fourth.style.display = "block";
         }
-
         if (lives === 1) {   
             fifthAttempt.style.display = "block";
             fifth.style.display = "block";
@@ -150,48 +162,46 @@ function submit() {
             failAttempt.style.display = "block";
         }
 
-
+// Else, set the current to the first item in the tile array and increase count
     } else {
 
         if (toggle === false) {
         } else {
             current = tileArray[0];
+            console.log("tile array length: "+ tileArray.length);
             tileArray.shift();
             current.style.visibility = 'hidden';
             count++;
             toggle = false;
+            console.log("count after submit = " + count);
+            console.log("lives after submit = " + lives);
+            lives--;
         }
 
-
-
-
-
-
-        lives--;
+        
     }
     // document.getElementById("lives").innerHTML = lives;
-    if (lives === 0) {
-        modalFail.style.display = "block";
-
-    }
-    console.log("toggle count = " + toggle)
-    console.log("count = " + count)
-    console.log("lives = " + lives)
-
+    // if (lives === 0) {
+    //     modalFail.style.display = "block";
+    // }
     if (lives === 4) {
         one.style.background = "red";
     }
     if (lives === 3) {
         two.style.background = "red";
+        
     }
     if (lives === 2) {
         three.style.background = "red";
     }
     if (lives === 1) {
         four.style.background = "red";
+        
     }
-    if (lives === 0) {
+    if (lives < 1) {
+        console.log("less than one")
         five.style.background = "red";
+        modalFail.style.display = "block";
     }
 }
 
@@ -208,8 +218,7 @@ function submit() {
 
 
 
-// -----------------Modal--------------//
-
+// -----------------Close model --------------//
 
 const close = document.getElementById("cross");
 close.addEventListener("click", closeModal);
@@ -217,14 +226,11 @@ close.addEventListener("click", closeModal);
 function closeModal() {
     console.log("close")
     modalWin.style.display = "none";
-
 }
-
 const closeFail = document.getElementById("crossFail");
 closeFail.addEventListener("click", closeModalFail);
 
 function closeModalFail() {
-    console.log("close")
     modalFail.style.display = "none";
 
 }
@@ -258,10 +264,4 @@ const x = setInterval(function() {
   + minutes + ":" + seconds;
 //   document.getElementById("timerWin").innerHTML = "bananas";
 
-
-
-  
-
 }, 1000);
-
-

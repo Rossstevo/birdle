@@ -157,7 +157,7 @@ button:active {
   font-weight: bold;
 }
 
-.peep {
+.start {
   border: 3px solid black;
   padding: 5px;
   position: relative;
@@ -171,12 +171,12 @@ button:active {
 
 }
 
-.peep:hover {
+.start:hover {
   opacity: 1;
 
 }
 
-.peep:active {
+.start:active {
   opacity: 0.9;
   transform: translateY(2px);
 }

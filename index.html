@@ -12,18 +12,20 @@
 <!--Nice to see you here. Well...unless you came here looking for the answers in which case get out of here!!! But seriously you know you can hire me, right? drop me an email @ Ross.w.stevenson@gmail.com  ------------------>
 
 <body>
-
+    <!----------------- Heading Text ------------->
     <h1>Peeple </h1>
+    <!----------------- Github Logo ------------->
     <div class="github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
 
-<!----------------- Start modal ------------->
+    <!----------------- Landing page  modal ------------->
     <div id="intro-modal" class="intro-modal">
-        <div class = "intro-modal-content">
+        <div class="intro-modal-content">
             <h3>Here's how to play</h3>
-            <p>1. Click <span class = "login-start">START</span></p>
-            <p>2. <span class = "login-enter">Enter your guess</span></p>
-            <p>3. Click <span class = "login-guess">GUESS</span></p></p>
-            <p> Not sure who it is? click <span class = "login-skip">SKIP</span></p>
+            <p>1. Click <span class="login-start">START</span></p>
+            <p>2. <span class="login-enter">Enter your guess</span></p>
+            <p>3. Click <span class="login-guess">GUESS</span></p>
+            </p>
+            <p> Not sure who it is? click <span class="login-skip">SKIP</span></p>
             <h3>Got it? Click anywhere to begin</h3>
         </div>
     </div>
@@ -57,8 +59,8 @@
             <div class="square" id="square24"></div>
         </div>
 
-
-        <div class="peep" id="peep">START</div>
+        <!----------------- Start Button  ------------------>
+        <div class="start" id="start">START</div>
 
         <!----------------- Score square ------------------>
         <div class="score-container">
@@ -73,10 +75,10 @@
 
         <div class="input-container">
             <input id="input" type="text" placeholder="Emma Thompson" onfocus="value=''">
-            <div class = "button-container">
-            <button id="skip-button" class= "skip">SKIP</button>
-            <button id="button">SUBMIT</button>
-        </div>
+            <div class="button-container">
+                <button id="skip-button" class="skip">SKIP</button>
+                <button id="button">SUBMIT</button>
+            </div>
 
         </div>
     </div>
@@ -166,7 +168,7 @@
             <div class="timer-box">
                 <p class="try-again">Next Peeple</p>
                 <p class="timer" id="timerWin"></p>
-                
+
             </div>
 
         </div>
@@ -208,19 +210,19 @@
 
             </div>
 
-            <div class = "timer-box">
-            <p class = "try-again">Next Peeple</p>
-            <p class = "timer" id="timerFail"></p>
+            <div class="timer-box">
+                <p class="try-again">Next Peeple</p>
+                <p class="timer" id="timerFail"></p>
 
 
-        </div>
-
-
-
+            </div>
 
 
 
-        <script src="main.js"></script>
+
+
+
+            <script src="main.js"></script>
 
 </body>
 
