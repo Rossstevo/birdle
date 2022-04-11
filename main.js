@@ -88,7 +88,7 @@ function peepReveal() {
         current = peepArray[0];
         peepArray.shift()
         current.style.visibility = 'hidden'
-        count++;
+        // count++;
         toggle = false;
     }
 
@@ -116,6 +116,7 @@ function submit() {
     if (answer === guess) {
         console.log("correct")
         modalWin.style.display = "block";
+
         if (lives === 5) {   
             firstAttempt.style.display = "block";
             first.style.display = "block";
