@@ -17,6 +17,12 @@
     <!----------------- Github Logo ------------->
     <div class="github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
 
+    <audio id="myAudio">
+        <source src="blipper.wav" type="audio/ogg">
+    </audio>
+
+
+
     <!----------------- Landing page  modal ------------->
     <div id="intro-modal" class="intro-modal">
         <div class="intro-modal-content">
@@ -33,6 +39,8 @@
     <!----------------- Main grid ------------------>
     <div class="container">
         <div class="box">
+            <div class = "test" >
+                <button class="start" id="start">START</button></div>
             <div class="square" id="square1"></div>
             <div class="square" id="square2"></div>
             <div class="square" id="square3"></div>
@@ -59,8 +67,7 @@
             <div class="square" id="square24"></div>
         </div>
 
-        <!----------------- Start Button  ------------------>
-        <div class="start" id="start">START</div>
+        
 
         <!----------------- Score square ------------------>
         <div class="score-container">
@@ -74,10 +81,11 @@
         <!----------------- input and submit button ------------------>
 
         <div class="input-container">
-            <input id="input" type="text" placeholder="Emma Thompson" onfocus="value=''">
+            <input id="input" type="text" placeholder="Who am I?" onfocus="value=''">
             <div class="button-container">
-                <button id="skip-button" class="skip">SKIP</button>
-                <button id="button">SUBMIT</button>
+                <!-- <button id="skip-button" class="skip">SKIP</button> -->
+                
+                <button class = "submit" id="button">SUBMIT/SKIP</button>
             </div>
 
         </div>
@@ -223,6 +231,7 @@
 
 
             <script src="main.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
 

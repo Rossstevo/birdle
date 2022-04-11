@@ -26,6 +26,12 @@ const square24 = document.getElementById("square24");
 
 
 // variables 
+const play = document.getElementById("myAudio"); 
+
+
+
+
+
 
 let count = 0
 let lives = 5;
@@ -35,8 +41,15 @@ let toggle = true;
 let submitToggle = true;
 let current = '';
 
+// const clueBox = document.getElementById("clueBox");
 
+// const clue = document.getElementById("clue");
+// clue.addEventListener("click", cluereveal);
 
+// function cluereveal() {
+//     console.log("clue")
+//     clueBox.style.visibility = 'none';
+// }
 
 
 
@@ -71,7 +84,8 @@ const three = document.getElementById("three");
 const four = document.getElementById("four");
 const five = document.getElementById("five");
 
-
+const button = document.getElementById("button");
+button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
 let tileArray = [square3, square7, square9, square10, square21, square1]   /*-----------------------------------change this line daily*/
@@ -83,19 +97,29 @@ console.log("Count at start = " + count)
 console.log("Lives at start = " + lives)
 
 
-const skip = document.getElementById("skip-button");
-skip.addEventListener("click", submit);
+// const skip = document.getElementById("skip-button");
+// skip.addEventListener("click", submit);
 
 
 //Start button: get ID 
 const start = document.getElementById("start");
 start.addEventListener("click", firstTileReveal);
 
+
+start.style.display = "block";
+
 //Start button: function. 
 
 function firstTileReveal() {
     //remove start button
     start.style.visibility = 'hidden';
+    button.style.opacity = '1';
+
+
+    play.play(); 
+
+
+
     if (toggle === false) {
     } else {
     // set current to first tile in array, hide this tile then remove it from the array
@@ -108,6 +132,8 @@ function firstTileReveal() {
         console.log(tileArray)
         console.log("Count after start button = " + count)
         console.log("Lives after start button = " + lives)
+        // skip.style.display = "block";
+        button.style.display = "block";
     }
 
 }
@@ -116,10 +142,11 @@ function firstTileReveal() {
 
 
 // -------------button answer checker ----
-const button = document.getElementById("button");
-button.addEventListener("click", submit)
+
 
 function submit() {
+
+
 
     console.log(tileArray)
     toggle = true;
@@ -153,9 +180,11 @@ function submit() {
         if (lives === 2) {   
             fourthAttempt.style.display = "block";
           fourth.style.display = "block";
+          
         }
         if (lives === 1) {   
             fifthAttempt.style.display = "block";
+            
             fifth.style.display = "block";
         }
         if (lives === 0) {   
@@ -180,10 +209,8 @@ function submit() {
 
         
     }
-    // document.getElementById("lives").innerHTML = lives;
-    // if (lives === 0) {
-    //     modalFail.style.display = "block";
-    // }
+   
+   
     if (lives === 4) {
         one.style.background = "red";
     }
@@ -193,28 +220,16 @@ function submit() {
     }
     if (lives === 2) {
         three.style.background = "red";
+        clue.style.visibility = 'block';
     }
     if (lives === 1) {
         four.style.background = "red";
-        
     }
     if (lives < 1) {
-        console.log("less than one")
         five.style.background = "red";
         modalFail.style.display = "block";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
