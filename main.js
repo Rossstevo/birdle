@@ -35,7 +35,7 @@ const play = document.getElementById("myAudio");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Helena Bonham Carter" /*----------------------------------------------change this line daily*/
+let capitalAnswer = "Gordon Ramsay" /*----------------------------------------------change this line daily*/
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -88,7 +88,7 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
-let tileArray = [square3, square7, square9, square10, square21, square1]   /*-----------------------------------change this line daily*/
+let tileArray = [square10, square11, square18, square19, square21, square1]   /*-----------------------------------change this line daily*/
 
 
 // bug finding 
@@ -256,7 +256,7 @@ function closeModalFail() {
 
 
 //------------countdown timer----------------------
-const countDownDate = new Date("April 11, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
+const countDownDate = new Date("April 12, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
 const x = setInterval(function() {
