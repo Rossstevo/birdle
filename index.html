@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <!--Nice to see you here. Well...unless you came here looking for the answers in which case get out of here!!! But seriously you know you can hire me, right? drop me an email @ Ross.w.stevenson@gmail.com  ------------------>
+
 <body>
 
     <h1>Peeple </h1>
-    <div class = "github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
+    <div class="github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
 
 
-<!----------------- Main grid ------------------>
+    <!----------------- Main grid ------------------>
 
     <div class="container">
         <div class="box">
@@ -47,9 +48,9 @@
         </div>
 
 
-        <div class = "peep" id= "peep">START</div>
+        <div class="peep" id="peep">START</div>
 
-<!----------------- Score square ------------------>
+        <!----------------- Score square ------------------>
         <div class="score-container">
             <div id="one" class="score one"></div>
             <div id="two" class="score two"></div>
@@ -58,103 +59,121 @@
             <div id="five" class="score five"></div>
         </div>
 
-<!----------------- input and submit button ------------------>
+        <!----------------- input and submit button ------------------>
 
-        <div class = "input-container">
-        <input id="input" type="text" placeholder="Emma Thompson" onfocus="value=''">
-        <button id="button">GUESS</button>
-    </div>
+        <div class="input-container">
+            <input id="input" type="text" placeholder="Emma Thompson" onfocus="value=''">
+            <button id="button">GUESS</button>
+        </div>
     </div>
 
-<!----------------- Modal WIN content ------------------>
+    <!----------------- Modal WIN content ------------------>
     <div id="myModalWin" class="modalWin">
 
         <!-- Modal content -->
         <div class="modalWin-content">
-            <span id = "cross" class="close">&times;</span>
-            <p>Bingo! The answer is 
+            <span id="cross" class="close">&times;</span>
+            <p>Bingo! It's
                 <span class="answer" id="answer"></span>
             </p>
-            
-            <p id = "firstAttempt" class = firstAttempt>
+
+            <p id="firstAttempt" class=firstAttempt>
                 <i class="material-icons" style="font-size:26px;color:green;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
             </p>
-            <p id = "secondAttempt" class = "secondAttempt">
+            <p id="secondAttempt" class="secondAttempt">
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:green;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
             </p>
-            <p id = "thirdAttempt" class = thirdAttempt>
+            <p id="thirdAttempt" class=thirdAttempt>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:green;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
             </p>
-            <p id = "fourthAttempt" class = "fourthAttempt">
+            <p id="fourthAttempt" class="fourthAttempt">
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:green;">square</i>
                 <i class="material-icons" style="font-size:26px;color:grey;">square</i>
             </p>
-            <p id = "fifthAttempt" class = "fifthAttempt">
+            <p id="fifthAttempt" class="fifthAttempt">
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:green;">square</i>
             </p>
-            
-        <!-- watsapp text  -->
-            
+
+            <!-- watsapp text  -->
+
             </p>
             <div class="box-answer"></div>
-            <div class = "first" id = "first"><a href="whatsapp://send?text= 👀 &#x1F7E9&#x2B1C&#x2B1C&#x2B1C&#x2B1C I beat today's Peeple!     https://www.peeple.fun" data-action="share/whatsapp/share"
-                    target="_blank">
+            <div class="first" id="first"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E9&#x2B1C&#x2B1C&#x2B1C&#x2B1C I beat today's Peeple!     https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
                 </a> </div>
 
-            <div class = "second" id = "second"><a href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E9&#x2B1C&#x2B1C&#x2B1C I beat today's Peeple!       https://www.peeple.fun" data-action="share/whatsapp/share"
-                    target="_blank">
-                    <div class="share">Share</div>
-                </a> </div>
-            
-            <div class = "third" id = "third"><a href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C&#x2B1C I beat today's Peeple!       https://www.peeple.fun" data-action="share/whatsapp/share"
-                    target="_blank">
+            <div class="second" id="second"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E9&#x2B1C&#x2B1C&#x2B1C I beat today's Peeple!       https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
                 </a> </div>
 
-            <div class = "fourth" id = "fourth"><a href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C I beat today's Peeple!       https://www.peeple.fun" data-action="share/whatsapp/share"
-                    target="_blank">
+            <div class="third" id="third"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C&#x2B1C I beat today's Peeple!       https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
                 </a> </div>
 
-            <div class = "fifth" id = "fifth"><a href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E9 I beat today's Peeple!      https://www.peeple.fun" data-action="share/whatsapp/share"
-                    target="_blank">
+            <div class="fourth" id="fourth"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C I beat today's Peeple!       https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
                 </a> </div>
-            
+
+            <div class="fifth" id="fifth"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E9 I beat today's Peeple!      https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
+                    <div class="share">Share</div>
+
+                </a> </div>
+
+
+            <div class="timer-box">
+                <p class="try-again">Next Peeple</p>
+                <p class="timer" id="timerWin"></p>
+                
+            </div>
 
         </div>
 
+
+
+
+
     </div>
-<!----------------- Modal FAIL content ------------------>
+    <!----------------- Modal FAIL content ------------------>
     <div id="myModalFail" class="modalFail">
 
         <!-- Modal content -->
         <div class="modalFail-content">
-            <span id = "crossFail" class="close">&times;</span>
-            <p>You ran out of lives! The answer is</p>
-            <h3 id = "failAnswer"></h3>
+            <span id="crossFail" class="close">&times;</span>
+            <p>You ran out of lives! It's </p>
+            <h3 id="failAnswer"></h3>
+
+
             <p><span class="answer" id="answer"></span></p>
-            <p id = "failAttempt" class = "failAttempt">
+            <p id="failAttempt" class="failAttempt">
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
@@ -162,20 +181,32 @@
                 <i class="material-icons" style="font-size:26px;color:red;">square</i>
             </p>
             <div class="box-answer"></div>
-            <div><a href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5 Today's Peeple was too tough for me!       https://www.peeple.fun" data-action="share/whatsapp/share"
-                target="_blank">
-            <div class="share">Share</div>
+            <div>
+                <href
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5 Today's Peeple was too tough for me!       https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
+                    <div class="share">Share</div>
+
+
+
+
+
+
+            </div>
+
+            <div class = "timer-box">
+            <p class = "try-again">Next Peeple</p>
+            <p class = "timer" id="timerFail"></p>
+
 
         </div>
 
-    </div>
 
 
 
 
 
-
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 
 </body>
 

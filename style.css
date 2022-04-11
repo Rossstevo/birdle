@@ -36,6 +36,22 @@ body {
 
 }
 
+.timer-box {
+  /* border: 2px solid black; */
+  width: 200px;
+  height: 100px;
+}
+
+.try-again {
+  color: black;
+  font-family: helvetica;
+}
+
+.timer{
+  color: black;
+  font-family: helvetica;
+}
+
 .github {
   /* border: 2px solid black; */
   position: absolute;

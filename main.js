@@ -104,13 +104,18 @@ button.addEventListener("click", submit)
 function submit() {
 
 
-
-
-
-
     toggle = true;
-    //make answer lower case
+    //make answer lower case and remove last letter if it is a space 
     let guess = document.querySelector('input').value.toLowerCase();
+    let last = guess.charAt(guess.length-1);
+    console.log("last = " + last)
+    if (last === " "){
+        guess = guess.substring(0, guess.length - 1);
+        console.log("last = " + last)
+        console.log("guess = " + guess)
+
+    }
+
 
 
     if (answer === guess) {
@@ -228,7 +233,35 @@ function closeModalFail() {
 
 
 
+//------------countdown timer----------------------
+const countDownDate = new Date("April 11, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
+// Update the count down every 1 second
+const x = setInterval(function() {
+
+  // Get today's date and time
+  let now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  const distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("timerFail").innerHTML = hours + ":"
+  + minutes + ":" + seconds;
+  document.getElementById("timerWin").innerHTML = hours + ":"
+  + minutes + ":" + seconds;
+//   document.getElementById("timerWin").innerHTML = "bananas";
+
+
+
+  
+    
+}, 1000);
 
 
 
