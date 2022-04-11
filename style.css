@@ -99,6 +99,7 @@ input {
 }
 
 .input-container {
+  
   position: relative;
   bottom: 25px;
   display: flex;
@@ -111,19 +112,17 @@ button {
   bottom: 0.5px;
   margin-top: 10px;
   border: 3px solid black;
-  background-color: coral;
+  background-color:  coral;
   height: 35px;
-  width: 100px;
+  width: 80px;
   cursor: pointer;
   font-size: 16px;
   opacity: 0.9;
-  
 
 }
 
 button:hover {
   opacity: 1;
-  
 
 }
 
@@ -131,6 +130,29 @@ button:active {
   opacity: 0.9;
   transform: translateY(2px);
 }
+
+.skip {
+  background: grey;
+}
+
+
+
+
+
+.button-container {
+  display: flex;
+  justify-content:space-between;
+  width: 230px;
+}
+
+
+
+
+
+
+
+
+
 .answer {
   font-weight: bold;
 }
@@ -141,7 +163,7 @@ button:active {
   position: relative;
   color: black;
   bottom: 30px;
-  width: 80px;
+  width: 120px;
   text-align: center;
   background: #06d6a0;
   cursor: pointer;
@@ -152,13 +174,16 @@ button:active {
 .peep:hover {
   opacity: 1;
 
-
 }
 
 .peep:active {
   opacity: 0.9;
   transform: translateY(2px);
 }
+
+
+
+
 
 
 .score-container {
@@ -170,8 +195,6 @@ button:active {
   width: 200px;
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .score {
@@ -320,4 +343,67 @@ a {
 }
 .fifth {
   display:none;
+}
+
+
+/* ---------------------------------intro modal-------------- */
+
+
+.intro-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.intro-modal-content {
+  background-color: #fefefe;
+  margin : 20% auto;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.login-start {
+  border: 3px solid black;
+  padding: 4px;
+  position: relative;
+  font-size: 12px;
+  color: black;
+  width: 80px;
+  text-align: center;
+  background: #06d6a0;
+}
+
+.login-enter {
+  border: 2px solid black;
+  padding: 4px;
+  background-color: white;
+  color: grey;
+}
+.login-guess {
+  border: 3px solid black;
+  padding: 4px;
+  font-size: 12px;
+  background-color: coral;
+  color: black;
+}
+
+.login-skip {
+  border: 2px solid black;
+  padding: 4px;
+  font-size: 12px;
+  background-color: grey;
+  color: black;
 }

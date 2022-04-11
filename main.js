@@ -39,10 +39,6 @@ let current = '';
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
 
-
-
-
-
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
@@ -54,10 +50,6 @@ const fourth = document.getElementById("fourth");
 const fifth = document.getElementById("fifth");
 
 
-
-
-
-
 // -------------------score cubes---------//
 const one = document.getElementById("one");
 const two = document.getElementById("two");
@@ -65,6 +57,10 @@ const three = document.getElementById("three");
 const four = document.getElementById("four");
 const five = document.getElementById("five");
 
+
+// ---------------skip button-----------
+const skip = document.getElementById("skip-button")
+skip.addEventListener("click", submit);
 
 
 
@@ -95,9 +91,7 @@ function peepReveal() {
 }
 
 
-
-
-// -------------button answer checker ----
+// -------------button answer checker ----//
 const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
@@ -115,8 +109,6 @@ function submit() {
         console.log("guess = " + guess)
 
     }
-
-
 
     if (answer === guess) {
         console.log("correct")
@@ -149,7 +141,6 @@ function submit() {
             failAttempt.style.display = "block";
         }
 
-
     } else {
 
         if (toggle === false) {
@@ -161,13 +152,13 @@ function submit() {
             toggle = false;
         }
 
-
-
-
-
-
         lives--;
     }
+
+    
+
+
+
     // document.getElementById("lives").innerHTML = lives;
     if (lives === 0) {
         modalFail.style.display = "block";
@@ -207,7 +198,7 @@ function submit() {
 
 
 
-// -----------------Modal--------------//
+// -----------------Modal cross --------------//
 
 
 const close = document.getElementById("cross");
@@ -233,7 +224,7 @@ function closeModalFail() {
 
 
 
-//------------countdown timer----------------------
+//------------countdown timer----------------------//
 const countDownDate = new Date("April 11, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
@@ -257,266 +248,6 @@ const x = setInterval(function() {
   + minutes + ":" + seconds;
 //   document.getElementById("timerWin").innerHTML = "bananas";
 
-
-
-  
-    
 }, 1000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const square1 = document.getElementById("square1");
-// square1.addEventListener("click", remove);
-// function remove() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         square1.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count;
-//         toggle = false;
-//         console.log(toggle)
-//     }
-// }
-// const square2 = document.getElementById("square2");
-// square2.addEventListener("click", remove2);
-// function remove2() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         square2.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count;
-//         toggle = false;
-//         console.log(toggle)
-//     }
-// }
-// const square3 = document.getElementById("square3");
-// square3.addEventListener("click", remove3);
-// function remove3() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         square3.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count;
-//         toggle = false;
-//         console.log(toggle)
-//     }
-// }
-// const square4 = document.getElementById("square4");
-// square4.addEventListener("click", remove4);
-// function remove4() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         square4.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count;
-//         toggle = false;
-//     }
-// }
-// const square5 = document.getElementById("square5");
-// square5.addEventListener("click", remove5);
-// function remove5() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         square5.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count;
-//         toggle = false;
-//     }
-// }
-
-//     const square6 = document.getElementById("square6");
-//     square6.addEventListener("click", remove6);
-//     function remove6() {
-//         if (toggle === false) {
-//             console.log("attempt to click")
-//         } else {
-//             square6.style.visibility = 'hidden'
-//             count++;
-//             document.getElementById("counter").innerHTML = count;
-//             toggle = false;
-//         }
-//     }
-
-
-
-
-
-// square1.addEventListener("click", test1);
-// square2.addEventListener("click", test2);
-// square3.addEventListener("click", test3);
-// square4.addEventListener("click", test4);
-// square5.addEventListener("click", test5);
-// square6.addEventListener("click", test6);
-// square7.addEventListener("click", test7);
-// square8.addEventListener("click", test8);
-// square9.addEventListener("click", test9);
-// square10.addEventListener("click", test10);
-// square11.addEventListener("click", test11);
-// square12.addEventListener("click", test12);
-// square13.addEventListener("click", test13);
-// square14.addEventListener("click", test14);
-// square15.addEventListener("click", test15);
-// square16.addEventListener("click", test16);
-// square17.addEventListener("click", test17);
-// square18.addEventListener("click", test18);
-// square19.addEventListener("click", test19);
-// square20.addEventListener("click", test20);
-// square21.addEventListener("click", test21);
-// square22.addEventListener("click", test22);
-// square23.addEventListener("click", test23);
-// square24.addEventListener("click", test24);
-
-
-
-
-// function test1() {
-    //     current = square1;
-    //     remove()
-    // }
-    // function test2() {
-    //     current = square2;
-    //     remove()
-    // }
-    // function test3() {
-    //     current = square3;
-    //     remove()
-    // }
-    // function test4() {
-    //     current = square4;
-    //     remove()
-    // }
-    // function test5() {
-    //     current = square5;
-    //     remove()
-    // }
-    // function test6() {
-    //     current = square6;
-    //     remove()
-    // }
-    // function test7() {
-    //     current = square7;
-    //     remove()
-    // }
-    // function test8() {
-    //     current = square8;
-    //     remove()
-    // }
-    // function test9() {
-    //     current = square9;
-    //     remove()
-    // }
-    // function test10() {
-    //     current = square10;
-    //     remove()
-    // }
-    // function test11() {
-    //     current = square11;
-    //     remove()
-    // }
-    // function test12() {
-    //     current = square12;
-    //     remove()
-    // }
-    // function test13() {
-    //     current = square13;
-    //     remove()
-    // }
-    // function test14() {
-    //     current = square14;
-    //     remove()
-    // }
-    // function test15() {
-    //     current = square15;
-    //     remove()
-    // }
-    // function test16() {
-    //     current = square16;
-    //     remove()
-    // }
-    // function test17() {
-    //     current = square17;
-    //     remove()
-    // }
-    // function test18() {
-    //     current = square18;
-    //     remove()
-    // }
-    // function test19() {
-    //     current = square19;
-    //     remove()
-    // }
-    // function test20() {
-    //     current = square20;
-    //     remove()
-    // }
-    // function test21() {
-    //     current = square21;
-    //     remove()
-    // }
-    // function test22() {
-    //     current = square22;
-    //     remove()
-    // }
-    // function test23() {
-    //     current = square23;
-    //     remove()
-    // }
-    // function test24() {
-    // current = square24;
-    //     remove()
-    // }
-
-
-
-
-    //watsap share feature 
-// const linkStart = "whatsapp://send?text=I got todays Peeple in "
-// const linkEnd = "https://sparkly-mandazi-c28bd8.netlify.app/"
-// let linkText = linkStart + count + linkEnd;
-// console.log(linkText);
-// const link = document.getElementById("link");
-// document.getElementById("link").innerHTML = link
-
-
-// ------------------ Peep reveal ------------------
-
-// 
-
-
-// // remove tile 
-// function remove() {
-//     if (toggle === false) {
-//         console.log("attempt to click")
-//     } else {
-//         current.style.visibility = 'hidden'
-//         count++;
-//         document.getElementById("counter").innerHTML = count
-//         toggle = false;
-//     }
-// }
