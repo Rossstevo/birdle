@@ -1,6 +1,11 @@
 body {
   background: whitesmoke;
   font-family: helvetica;
+
+
+
+  background-image: linear-gradient(139deg, #ffffff 2.38%, #f5f5f5 2.38%, #f5f5f5 50%, #ffffff 50%, #ffffff 52.38%, #f5f5f5 52.38%, #f5f5f5 100%);
+  background-size: 32.01px 27.83px;
 }
 
 
