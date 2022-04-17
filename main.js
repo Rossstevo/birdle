@@ -35,7 +35,7 @@ const play = document.getElementById("myAudio");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Helena Bonham Carter" /*----------------------------------------------change this line daily*/
+let capitalAnswer = "Bill Bailey" /*----------------------------------------------change this line daily*/
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -88,7 +88,7 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
-let tileArray = [square3, square7, square9, square10, square21, square1]   /*-----------------------------------change this line daily*/
+let tileArray = [square6, square14, square8, square15, square7, square3]   /*-----------------------------------change this line daily*/
 
 
 // bug finding 
@@ -101,9 +101,26 @@ console.log("Lives at start = " + lives)
 // skip.addEventListener("click", submit);
 
 
+
+
+
+
+
+
+
 //Start button: get ID 
 const start = document.getElementById("start");
 start.addEventListener("click", firstTileReveal);
+const how = document.getElementById("how-to");
+how.addEventListener("click", instructions);
+const intro = document.getElementById("intro-modal")
+const gotIt = document.getElementById("got-it");
+gotIt.addEventListener("click", closeInstructions);
+
+
+
+
+
 
 
 start.style.display = "block";
@@ -114,7 +131,7 @@ function firstTileReveal() {
     //remove start button
     start.style.visibility = 'hidden';
     button.style.opacity = '1';
-
+    how.style.visibility = 'hidden';
 
     play.play(); 
 
@@ -137,6 +154,28 @@ function firstTileReveal() {
     }
 
 }
+
+
+
+
+function instructions() {
+    start.style.visibility = "hidden";
+    how.style.visibility = "hidden";
+    intro.style.display = "block";
+
+
+}
+
+
+function closeInstructions() {
+    intro.style.visibility = 'hidden';
+    start.style.display = 'block';
+    how.style.display = 'block';
+    firstTileReveal()
+
+}
+
+
 
 
 
@@ -256,7 +295,7 @@ function closeModalFail() {
 
 
 //------------countdown timer----------------------
-const countDownDate = new Date("April 11, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
+const countDownDate = new Date("April 17, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
 const x = setInterval(function() {
