@@ -111,11 +111,11 @@ console.log("Lives at start = " + lives)
 //Start button: get ID 
 const start = document.getElementById("start");
 start.addEventListener("click", firstTileReveal);
-// const how = document.getElementById("how-to");
-// how.addEventListener("click", instructions);
-// const intro = document.getElementById("intro-modal")
-// const gotIt = document.getElementById("got-it");
-// gotIt.addEventListener("click", closeInstructions);
+const how = document.getElementById("how-to");
+how.addEventListener("click", instructions);
+const intro = document.getElementById("intro-modal")
+const gotIt = document.getElementById("got-it");
+gotIt.addEventListener("click", closeInstructions);
 
 
 
@@ -131,7 +131,7 @@ function firstTileReveal() {
     //remove start button
     start.style.visibility = 'hidden';
     button.style.opacity = '1';
-
+    how.style.visibility = 'hidden';
 
     play.play(); 
 
@@ -158,22 +158,22 @@ function firstTileReveal() {
 
 
 
-// function instructions() {
-//     start.style.visibility = "hidden";
-//     how.style.visibility = "hidden";
-//     intro.style.display = "block";
+function instructions() {
+    start.style.visibility = "hidden";
+    how.style.visibility = "hidden";
+    intro.style.display = "block";
 
 
-// }
+}
 
 
-// function closeInstructions() {
-//     intro.style.visibility = 'hidden';
-//     start.style.display = 'block';
-//     how.style.display = 'block';
+function closeInstructions() {
+    intro.style.visibility = 'hidden';
+    start.style.display = 'block';
+    how.style.display = 'block';
+    firstTileReveal()
 
-
-// }
+}
 
 
 
