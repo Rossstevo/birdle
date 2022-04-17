@@ -316,17 +316,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid black;
   margin-top: 30px;
   width: 160px;
   padding: 5px;
   height: 20px;
-  color: whitesmoke;
+  color: black;
   font-family: helvetica;
   text-decoration: none;
   font-size: 13px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #52b788;
+  /* box-shadow: 5px 5px 0px 1px #000000 */
+}
+
+.twitter {
+  background: skyblue;
+  color: black;
 }
 
 a {
