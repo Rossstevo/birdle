@@ -30,12 +30,9 @@ const play = document.getElementById("myAudio");
 
 
 
-
-
-
 let count = 0
 let lives = 5;
-let capitalAnswer = "Kurt Cobain" /*----------------------------------------------change this line daily*/
+let capitalAnswer = "Stormzy" /*----------------------------------------------change this line daily*/
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -60,8 +57,6 @@ document.getElementById("answer").innerHTML = capitalAnswer;
 
 
 
-
-
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
@@ -71,10 +66,6 @@ const second = document.getElementById("second");
 const third = document.getElementById("third");
 const fourth = document.getElementById("fourth");
 const fifth = document.getElementById("fifth");
-
-
-
-
 
 
 // -------------------score cubes---------//
@@ -90,7 +81,6 @@ button.addEventListener("click", submit)
 //order in which tiles will be revealed 
 let tileArray = [square14, square21, square15, square6, square3, square3]   /*-----------------------------------change this line daily*/
 
-
 // bug finding 
 console.log(tileArray)
 console.log("Count at start = " + count)
@@ -99,11 +89,6 @@ console.log("Lives at start = " + lives)
 
 // const skip = document.getElementById("skip-button");
 // skip.addEventListener("click", submit);
-
-
-
-
-
 
 
 
@@ -118,11 +103,6 @@ const gotIt = document.getElementById("got-it");
 gotIt.addEventListener("click", closeInstructions);
 
 
-
-
-
-
-
 start.style.display = "block";
 
 //Start button: function. 
@@ -133,7 +113,7 @@ function firstTileReveal() {
     button.style.opacity = '1';
     how.style.visibility = 'hidden';
 
-    play.play(); 
+    
 
 
 
@@ -154,8 +134,6 @@ function firstTileReveal() {
     }
 
 }
-
-
 
 
 function instructions() {
@@ -295,7 +273,7 @@ function closeModalFail() {
 
 
 //------------countdown timer----------------------
-const countDownDate = new Date("April 18, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
+const countDownDate = new Date("April 19, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
 const x = setInterval(function() {
@@ -322,7 +300,7 @@ const x = setInterval(function() {
 
 
 
-// adjust picture based on date 
+
 
 
 
