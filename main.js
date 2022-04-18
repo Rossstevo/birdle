@@ -88,7 +88,7 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
-let tileArray = [square19, square2, square14, square6, square15, square3]   /*-----------------------------------change this line daily*/
+let tileArray = [square14, square21, square15, square6, square3, square3]   /*-----------------------------------change this line daily*/
 
 
 // bug finding 
@@ -319,3 +319,10 @@ const x = setInterval(function() {
 //   document.getElementById("timerWin").innerHTML = "bananas";
 
 }, 1000);
+
+
+
+// adjust picture based on date 
+
+
+
