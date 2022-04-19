@@ -75,12 +75,11 @@ rootImage.style.setProperty('--bg-image', imagePath)
 
 
 
-
-
-
 let count = 0
 let lives = 5;
+
 let capitalAnswer = todaysName 
+
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -105,8 +104,6 @@ document.getElementById("answer").innerHTML = capitalAnswer;
 
 
 
-
-
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
@@ -116,10 +113,6 @@ const second = document.getElementById("second");
 const third = document.getElementById("third");
 const fourth = document.getElementById("fourth");
 const fifth = document.getElementById("fifth");
-
-
-
-
 
 
 // -------------------score cubes---------//
@@ -133,7 +126,8 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
-let tileArray = todaysSequence   /*-----------------------------------change this line daily*/
+
+let tileArray = todaysSequence 
 
 
 // bug finding 
@@ -148,11 +142,6 @@ console.log("Lives at start = " + lives)
 
 
 
-
-
-
-
-
 //Start button: get ID 
 const start = document.getElementById("start");
 start.addEventListener("click", firstTileReveal);
@@ -161,11 +150,6 @@ how.addEventListener("click", instructions);
 const intro = document.getElementById("intro-modal")
 const gotIt = document.getElementById("got-it");
 gotIt.addEventListener("click", closeInstructions);
-
-
-
-
-
 
 
 start.style.display = "block";
@@ -177,6 +161,7 @@ function firstTileReveal() {
     start.style.visibility = 'hidden';
     button.style.opacity = '1';
     how.style.visibility = 'hidden';
+
 
 
 
@@ -198,8 +183,6 @@ function firstTileReveal() {
     }
 
 }
-
-
 
 
 function instructions() {
@@ -341,6 +324,7 @@ function closeModalFail() {
 //------------countdown timer----------------------
 const countDownDate = new Date("April 20, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
+
 // Update the count down every 1 second
 const x = setInterval(function() {
 
@@ -363,5 +347,4 @@ const x = setInterval(function() {
 //   document.getElementById("timerWin").innerHTML = "bananas";
 
 }, 1000);
-
 
