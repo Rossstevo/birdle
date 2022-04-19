@@ -25,8 +25,53 @@ const square23 = document.getElementById("square23");
 const square24 = document.getElementById("square24");
 
 
-// variables 
-const play = document.getElementById("myAudio"); 
+
+
+
+
+
+
+// ---------------------------- Automation test. 
+
+// Master array 
+const person = [
+    {
+    name: "David Blaine",
+    sequence: [square7, square17, square12, square10, square15, square3],
+    image: "David.png"
+    },
+    {
+    name: "Tintin",
+    sequence: [square1, square2, square3, square4, square5, square6],
+    image: "Tintin.png"
+        },
+    {
+    name: "Michael Jordan",
+    sequence: [square19, square2, square14, square6, square15, square3],
+    image: "MJ.png"
+        }
+];
+
+
+// test
+
+
+
+
+
+let todaysName = person[0].name;
+let todaysSequence = person[0].sequence;
+let todaysImage = person[0].image;
+
+
+// Get image and set to be first item in the array   
+const imagePath = 'url("images/'+ todaysImage + '")'
+let rootImage = document.querySelector(':root');
+rootImage.style.setProperty('--bg-image', imagePath)
+
+
+
+
 
 
 
@@ -35,7 +80,7 @@ const play = document.getElementById("myAudio");
 
 let count = 0
 let lives = 5;
-let capitalAnswer = "Kurt Cobain" /*----------------------------------------------change this line daily*/
+let capitalAnswer = todaysName 
 let answer = capitalAnswer.toLocaleLowerCase() 
 let toggle = true;
 let submitToggle = true;
@@ -88,7 +133,7 @@ const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
 //order in which tiles will be revealed 
-let tileArray = [square19, square2, square14, square6, square15, square3]   /*-----------------------------------change this line daily*/
+let tileArray = todaysSequence   /*-----------------------------------change this line daily*/
 
 
 // bug finding 
@@ -133,7 +178,6 @@ function firstTileReveal() {
     button.style.opacity = '1';
     how.style.visibility = 'hidden';
 
-    play.play(); 
 
 
 
@@ -295,7 +339,7 @@ function closeModalFail() {
 
 
 //------------countdown timer----------------------
-const countDownDate = new Date("April 18, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
+const countDownDate = new Date("April 20, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
 const x = setInterval(function() {
@@ -319,3 +363,5 @@ const x = setInterval(function() {
 //   document.getElementById("timerWin").innerHTML = "bananas";
 
 }, 1000);
+
+
