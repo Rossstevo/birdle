@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<!--Nice to see you here. Well...unless you came here looking for the answers in which case get out of here!!! But seriously you know you can hire me, right? drop me an email @ Ross.w.stevenson@gmail.com  ------------------>
+<!-- Hi there. I'm curently looking for entry level Web Dev / similar roles. Please email me at Ross.w.stevenson@gmail.com ------------------>
 
 <body>
     <!----------------- Heading Text ------------->
@@ -18,35 +18,42 @@
     <!----------------- Github Logo ------------->
     <div class="github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
 
-   
-
-
-
     <!----------------- How to ------------->
-     <div id="intro-modal" class="intro-modal">
+    <div id="intro-modal" class="intro-modal">
         <div class="intro-modal-content">
             <h3>How to play</h3>
             <p>Look at the tile, then guess who you think it is </p>
-            <p>Skipped or incorrect attempts unlock more of the picture 
- 
+            <p>Skipped or incorrect attempts unlock more of the picture
+
             </p>
             <p>Answer in as few tries as possible and share your score!</p>
             </p>
             <p><strong>A new Peeple will be available each day</p></strong>
             </p>
-            <button class = "start" id = "got-it">let's play!</button>
-            
+            <button class="start" id="got-it">let's play!</button>
+
         </div>
-    </div>  
+    </div>
 
     <!----------------- Main grid ------------------>
     <div class="container">
         <div class="box">
-            <div class = "test" >
+            <div class="test">
                 <button class="start" id="start">START</button>
-                <button class="how-to" id="how-to">How to play</button>
+                <div class="icon-buttons">
+                    <button class="how-to" id="how-to">
+                        <i class="material-icons" style="font-size:25px;color:white;">help</i>
+                    </button>
+                    <button class="darkmode" id="dark">
+                            <i class="material-icons" style="font-size:25px;color:white;">dark_mode</i>
+                            
+                        </span>
+                    </button>
+                </div>
+
+
             </div>
-                
+
             <div class="square" id="square1"></div>
             <div class="square" id="square2"></div>
             <div class="square" id="square3"></div>
@@ -73,7 +80,7 @@
             <div class="square" id="square24"></div>
         </div>
 
-        
+
 
         <!----------------- Score square ------------------>
         <div class="score-container">
@@ -87,24 +94,15 @@
         <!----------------- input and submit button ------------------>
 
         <div class="input-container">
-            <input id="input" type="text" placeholder="Who is it?" onfocus="value=''">
+            <input id="input" type="text" placeholder="Who am I?" onfocus="value=''">
             <div class="button-container">
                 <!-- <button id="skip-button" class="skip">SKIP</button> -->
-                
-                <button class = "submit" id="button">SUBMIT/SKIP</button>
+                <button class="submit" id="button">SUBMIT/SKIP</button>
                 <!-- <button class = "submit clue" id="button">CLUE</button> -->
             </div>
 
         </div>
     </div>
-
-
-
-
-
-
-
-
 
     <!----------------- Modal WIN content ------------------>
     <div id="myModalWin" class="modalWin">
@@ -160,8 +158,8 @@
                     href="whatsapp://send?text= 👀 &#x1F7E9&#x2B1C&#x2B1C&#x2B1C&#x2B1C 1/5 I beat today's Peeple!     https://www.peeple.fun"
                     data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
-                </a> 
-            
+                </a>
+
                 <div>
 
                     <a class="share twitter"
@@ -169,15 +167,15 @@
                         Share on Twitter</a>
 
                 </div>
-            
+
             </div>
 
             <div class="second" id="second"><a
                     href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E9&#x2B1C&#x2B1C&#x2B1C 2/5 I beat today's Peeple!       https://www.peeple.fun"
                     data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
-                </a> 
-            
+                </a>
+
                 <div>
 
                     <a class="share twitter"
@@ -185,14 +183,14 @@
                         Share on Twitter</a>
 
                 </div>
-            
+
             </div>
 
             <div class="third" id="third"><a
                     href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C&#x2B1C 3/5 I beat today's Peeple!       https://www.peeple.fun"
                     data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
-                </a> 
+                </a>
                 <div>
 
                     <a class="share twitter"
@@ -200,20 +198,20 @@
                         Share on Twitter</a>
 
                 </div>
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             </div>
 
             <div class="fourth" id="fourth"><a
                     href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E9&#x2B1C 4/5 I beat today's Peeple!       https://www.peeple.fun"
                     data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
-                </a> 
-            
+                </a>
+
                 <div>
 
                     <a class="share twitter"
@@ -221,11 +219,11 @@
                         Share on Twitter</a>
 
                 </div>
-            
-            
-            
-            
-            
+
+
+
+
+
             </div>
 
             <div class="fifth" id="fifth"><a
@@ -233,7 +231,7 @@
                     data-action="share/whatsapp/share" target="_blank">
                     <div class="share">Share</div>
 
-                </a> 
+                </a>
                 <div>
 
                     <a class="share twitter"
@@ -241,9 +239,9 @@
                         Share on Twitter</a>
 
                 </div>
-               
-    
-            
+
+
+
             </div>
 
 
@@ -286,51 +284,51 @@
                     <div class="share">Share</div> -->
 
 
-                    <div class="fail-share" id="fail-share"><a
-                        href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5 I was beat by today's Peeple      https://www.peeple.fun"
-                        data-action="share/whatsapp/share" target="_blank">
-                        <div class="share">Share on Whatsapp</div>
-                        
-                    </a> </div>
+            <div class="fail-share" id="fail-share"><a
+                    href="whatsapp://send?text= 👀 &#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5&#x1F7E5 I was beat by today's Peeple      https://www.peeple.fun"
+                    data-action="share/whatsapp/share" target="_blank">
+                    <div class="share">Share on Whatsapp</div>
+
+                </a> </div>
 
 
-                    <div>
+            <div>
 
-                        <a class="share twitter"
-                            href="https://twitter.com/intent/tweet?text=👀 &#x1F7E5  &#x1F7E5  &#x1F7E5  &#x1F7E5  &#x1F7E5 I was beat by today's Peeple      https://www.peeple.fun">
-                            Share on Twitter</a>
+                <a class="share twitter"
+                    href="https://twitter.com/intent/tweet?text=👀 &#x1F7E5  &#x1F7E5  &#x1F7E5  &#x1F7E5  &#x1F7E5 I was beat by today's Peeple      https://www.peeple.fun">
+                    Share on Twitter</a>
 
-                    </div>
-
-
-
-
-                    <div class="timer-box">
-                        <p class="try-again">Next Peeple</p>
-                        <p class="timer" id="timerFail">
-
-
-                            
-                        </p>
-        
-        
-                    </div>
+            </div>
 
 
 
+
+            <div class="timer-box">
+                <p class="try-again">Next Peeple</p>
+                <p class="timer" id="timerFail">
+
+
+
+                </p>
 
 
             </div>
 
-            
+
+
+
+
+        </div>
 
 
 
 
 
 
-            <script src="main.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
 

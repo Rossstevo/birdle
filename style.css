@@ -1,20 +1,20 @@
-body {
-  background: whitesmoke;
-  font-family: helvetica;
 
-
-
-  background-image: linear-gradient(139deg, #ffffff 2.38%, #f5f5f5 2.38%, #f5f5f5 50%, #ffffff 50%, #ffffff 52.38%, #f5f5f5 52.38%, #f5f5f5 100%);
-  background-size: 32.01px 27.83px;
+:root {
+  --bg-image: url("images/Kurt.png"); /*----------------------------------------------change this line daily*/
+  --color-main: whitesmoke;
+  --dm-dark: #222222;
+  --dm-light: #666666;
+  --modal-content-color: whitesmoke;
 }
 
 
 
-
-
-
-
- 
+body {
+  background: whitesmoke;
+  font-family: helvetica;
+  background-image: linear-gradient(139deg, #ffffff 2.38%, #f5f5f5 2.38%, #f5f5f5 50%, #ffffff 50%, #ffffff 52.38%, #f5f5f5 52.38%, #f5f5f5 100%);
+  background-size: 32.01px 27.83px;
+}
 
 
 .container {
@@ -39,7 +39,7 @@ body {
   bottom: 60px;
   width: 252px;
   height: 378px;
-  background-image: url("images/stormzy.png"); /*----------------------------------------------change this line daily*/
+  background-image: var(--bg-image); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,7 +97,7 @@ body {
   /* bottom: 40px; */
   width: 200px;
   height: 300px;
-  background-image: url("images/stormzy.png"); /*----------------------------------------------change this line daily*/
+  background-image: var(--bg-image); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,21 +110,19 @@ body {
   border: 1px solid grey;
   width: 61px;
   height: 61px;
-  background-color: whitesmoke;
+  background: var(--color-main);
   
   
 }
 
 input {
-
   margin-top: 20px;
   border: 2px solid black;
   width: 252px;
   height: 40px;
   text-align: center;
-  font-size: 16px;
-  
-  /* box-shadow: 5px 5px 0px 1px #000000 */
+  font-size: 16px;  
+  background: var(--modal-content-color)
 }
 
 .input-container {
@@ -137,7 +135,6 @@ input {
 }
 
 button {
-  /* position: relative; */
   bottom: 0.5px;
   border: 3px solid black;
   background-color:  coral;
@@ -172,11 +169,6 @@ button:active {
 }
 
 
-
-
-
-
-
 .start {
   
   border: 3px solid black;
@@ -190,7 +182,8 @@ button:active {
   background: #06d6a0;
   cursor: pointer;
   opacity: 1;
-  box-shadow: 5px 5px 0px 1px #000000
+  box-shadow: 5px 5px 0px 1px #000000;
+  display: block;
 
 }
 
@@ -204,6 +197,12 @@ button:active {
   transform: translateY(2px);
 }
 
+.icon-buttons {
+  /* border: 2px solid black; */
+  display: flex;
+  
+}
+
 .how-to {
   display: block;
   border: 3px solid black;
@@ -211,8 +210,8 @@ button:active {
   position: relative;
   color: black;
   /* bottom: 30px; */
-  width: 130px;
-  left: 10px;
+  width: 65px;
+  left: 3px;
   height: 35px;
   font-size: 16px;
   text-align: center;
@@ -220,8 +219,29 @@ button:active {
   cursor: pointer;
   opacity: 1;
   box-shadow: 5px 5px 0px 1px #000000
+}
+.darkmode {
+  display: block;
+  border: 3px solid black;
+  /* padding: 5px; */
+  position: relative;
+  color: black;
+  /* bottom: 30px; */
+  width: 65px;
+  left: 18px;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  background: var(--dm-light);
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 5px 5px 0px 1px #000000;
 
 }
+
+
+
+
 
 .how-to:hover {
   opacity: 1;
@@ -299,6 +319,7 @@ button:active {
   border: 2px solid black;
   width: 20px;
   height: 20px;
+  background: var(--main-color)
   /* box-shadow: 5px 5px 0px 1px #000000 */
 
 }
@@ -308,6 +329,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  color: var(--main-color);
   
 
 }
@@ -360,7 +382,7 @@ a {
 
 /* Modal Content/Box */
 .modalWin-content {
-  background-color: #fefefe;
+  background-color: var(--modal-content-color);
   margin : 20% auto;
   padding: 20px;
   width: 80%;
@@ -405,7 +427,7 @@ a {
 
 /* Modal Content/Box */
 .modalFail-content {
-  background-color: #fefefe;
+  background-color: var(--modal-content-color);
   margin : 10% auto;
   padding: 20px;
   width: 80%;
@@ -453,6 +475,11 @@ a {
 }
 
 
+
+
+
+
+
 /* ---------------------------------intro modal-------------- */
 
 
@@ -471,7 +498,7 @@ a {
 
 /* Modal Content/Box */
 .intro-modal-content {
-  background-color: #f5f5f5;
+  background-color: var(--modal-content-color);
   margin : 20% auto;
   border: 3px solid black;
   padding: 20px;
@@ -516,3 +543,63 @@ a {
   background-color: grey;
   color: black;
 }
+
+
+/* dark mode slider */
+
+.switch {
+  position: relative;
+  left: 40px;
+  margin-top: 10px;
+  display: block;
+  width: 60px;
+  height: 34px;
+  border: 3px solid black;
+  box-shadow: 5px 5px 0px 1px #000000
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+input:checked + .slider {
+  background-color: slategray;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px slategray;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
