@@ -39,6 +39,7 @@ body {
   width: 252px;
   height: 378px;
   background-image: var(--bg-image); 
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,6 +98,7 @@ body {
   width: 200px;
   height: 300px;
   background-image: var(--bg-image); 
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

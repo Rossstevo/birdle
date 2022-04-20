@@ -61,12 +61,13 @@ let answer = capitalAnswer.toLocaleLowerCase()
 let toggle = true;
 let submitToggle = true;
 let current = '';
-
 // put answer in models
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
 
+
 // get modals
+
 const modalWin = document.getElementById("myModalWin");
 const modalFail = document.getElementById("myModalFail");
 
@@ -77,7 +78,12 @@ const third = document.getElementById("third");
 const fourth = document.getElementById("fourth");
 const fifth = document.getElementById("fifth");
 
+
 // Score cubes
+=======
+
+// -------------------score cubes---------//
+
 const one = document.getElementById("one");
 const two = document.getElementById("two");
 const three = document.getElementById("three");
@@ -88,8 +94,25 @@ const five = document.getElementById("five");
 const button = document.getElementById("button");
 button.addEventListener("click", submit)
 
+
 // set tile array to first iteam of database 
 let tileArray = todaysSequence
+=======
+//order in which tiles will be revealed 
+
+let tileArray = todaysSequence 
+
+
+// bug finding 
+console.log(tileArray)
+console.log("Count at start = " + count)
+console.log("Lives at start = " + lives)
+
+
+// const skip = document.getElementById("skip-button");
+// skip.addEventListener("click", submit);
+
+
 
 //Start button: get ID 
 const start = document.getElementById("start");
@@ -102,6 +125,12 @@ const intro = document.getElementById("intro-modal")
 const gotIt = document.getElementById("got-it");
 gotIt.addEventListener("click", closeInstructions);
 
+
+=======
+
+start.style.display = "block";
+
+
 //Start button: function. 
 function firstTileReveal() {
     //remove start button, how-to button and toggle
@@ -109,6 +138,7 @@ function firstTileReveal() {
     how.style.visibility = 'hidden';
     dark.style.visibility = 'hidden';
     button.style.opacity = '1';
+
 
     if (toggle === false) {
     } else {
@@ -121,7 +151,11 @@ function firstTileReveal() {
     }
 }
 
+
 // how-to instructions -open
+=======
+
+
 function instructions() {
     start.style.visibility = "hidden";
     how.style.visibility = "hidden";
@@ -215,6 +249,7 @@ function closeModalFail() {
 //countdown time
 const countDownDate = new Date("April 2, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
 
+
 // Update the count down every 1 second
 const x = setInterval(function () {
     // Get today's date and time
@@ -232,6 +267,7 @@ const x = setInterval(function () {
         + minutes + ":" + seconds;
     //   document.getElementById("timerWin").innerHTML = "bananas";
 }, 1000);
+
 
 // darkmode 
 
@@ -273,4 +309,3 @@ function darkMode() {
         darkModeToggle = 0;
     }
 }
-
