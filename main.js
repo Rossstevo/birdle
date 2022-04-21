@@ -32,31 +32,79 @@ const person = [
         image: "serena-williams.png"
     },
     {
-        name: "Tintin",
-        sequence: [square1, square2, square3, square4, square5, square6],
-        image: "Tintin.png"
+        name: "Richard Branson",
+        sequence: [square7, square2, square23, square14, square15, square6],
+        image: "Richard.png"
     },
     {
-        name: "Michael Jordan",
-        sequence: [square19, square2, square14, square6, square15, square3],
-        image: "MJ.png"
+        name: "Kanye West",
+        sequence: [square2, square3, square14, square6, square15, square3],
+        image: "kayne.png"
+    }, 
+    {
+        name: "George Washington",
+        sequence: [square6, square2, square14, square10, square15, square3],
+        image: "George.png"
+    },
+    {
+        name: "Marilyn Monroe",
+        sequence: [square6, square24, square11, square10, square15, square3],
+        image: "Marilyn.png"
     }
 ];
-
 
 let todaysName = person[0].name;
 let todaysSequence = person[0].sequence;
 let todaysImage = person[0].image;
 
+// const buttonShift = document.getElementById("shift")
+// buttonShift.addEventListener("click", shifter)
+
+let capitalAnswer = todaysName
+let imagePath = 'url("images/' + todaysImage + '")'
+let rootImage = document.querySelector(':root');
+let tileArray = todaysSequence
+
+function shifter() {
+    
+    person.shift()
+    //update answer
+    todaysName = person[0].name
+    capitalAnswer = todaysName
+    console.log (todaysName);
+
+    //update modal answer
+    document.getElementById("failAnswer").innerHTML = capitalAnswer;
+    document.getElementById("answer").innerHTML = capitalAnswer;
+
+    //update picture
+    todaysImage = person[0].image;
+    imagePath = 'url("images/' + todaysImage + '")'
+    rootImage = document.querySelector(':root');
+    rootImage.style.setProperty('--bg-image', imagePath)
+
+    //update picture
+    todaysSequence = person[0].sequence;
+    tileArray = todaysSequence;
+
+}
+
+
+
+
+
+
 
 // Get image and set to be first item in the array   
-const imagePath = 'url("images/' + todaysImage + '")'
-let rootImage = document.querySelector(':root');
+
+
+
 rootImage.style.setProperty('--bg-image', imagePath)
+
 
 let count = 0
 let lives = 5;
-let capitalAnswer = todaysName
+
 let answer = capitalAnswer.toLocaleLowerCase()
 let toggle = true;
 let submitToggle = true;
@@ -65,6 +113,11 @@ let current = '';
 // put answer in models
 document.getElementById("failAnswer").innerHTML = capitalAnswer;
 document.getElementById("answer").innerHTML = capitalAnswer;
+
+
+// move to next object in the array 
+
+
 
 // get modals
 const modalWin = document.getElementById("myModalWin");
@@ -85,20 +138,22 @@ const four = document.getElementById("four");
 const five = document.getElementById("five");
 
 // submit button
-const button = document.getElementById("button");
-button.addEventListener("click", submit)
+const submitButton = document.getElementById("button");
+submitButton.addEventListener("click", submit)
 
 // set tile array to first iteam of database 
-let tileArray = todaysSequence
+
 
 //Start button: get ID 
 const start = document.getElementById("start");
 start.addEventListener("click", firstTileReveal);
 
 //How to button, modal and close button 
-const how = document.getElementById("how-to");
-how.addEventListener("click", instructions);
-const intro = document.getElementById("intro-modal")
+const instructionsButton = document.getElementById("how-to");
+instructionsButton.addEventListener("click", instructions);
+const instructionsModal = document.getElementById("instructions-modal")
+
+
 const gotIt = document.getElementById("got-it");
 gotIt.addEventListener("click", closeInstructions);
 
@@ -106,9 +161,7 @@ gotIt.addEventListener("click", closeInstructions);
 function firstTileReveal() {
     //remove start button, how-to button and toggle
     start.style.visibility = 'hidden';
-    how.style.visibility = 'hidden';
-    dark.style.visibility = 'hidden';
-    button.style.opacity = '1';
+    submitButton.style.opacity = '1';
 
     if (toggle === false) {
     } else {
@@ -116,25 +169,24 @@ function firstTileReveal() {
         current = tileArray[0];
         current.style.visibility = 'hidden';
         tileArray.shift();
-        button.style.display = "block";
+        submitButton.style.display = "block";
         toggle = false;
     }
 }
 
 // how-to instructions -open
 function instructions() {
-    start.style.visibility = "hidden";
-    how.style.visibility = "hidden";
-    intro.style.display = "block";
-    darkModeButton.style.visibility = "hidden";
+    console.log("opening....")
+    instructionsModal.style.display = "block";
+    
 }
 
 // how-to instructions - Got-it button
 function closeInstructions() {
-    intro.style.visibility = 'hidden';
-    start.style.display = 'block';
-    how.style.display = 'block';
-    firstTileReveal()
+    console.log("closing....")
+    instructionsModal.style.visibility = 'hidden';
+    instructionsButton.style.display = 'block';
+    // firstTileReveal()
 }
 
 // Submit/Skip
@@ -213,25 +265,27 @@ function closeModalFail() {
 
 
 //countdown time
-const countDownDate = new Date("April 2, 2022 23:59:59").getTime(); /*-----------------------------------------set timer*/
+// let dateCount = 21
+// let date = "April "+ x + ", 2022 23:59:59"
+// let countDownDate = new Date(date).getTime(); /*-----------------------------------------set timer*/
 
 // Update the count down every 1 second
-const x = setInterval(function () {
-    // Get today's date and time
-    let now = new Date().getTime();
-    // Find the distance between now and the count down date
-    const distance = countDownDate - now;
-    // Time calculations for days, hours, minutes and seconds
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    // Output the result in an element with id="demo"
-    document.getElementById("timerFail").innerHTML = hours + ":"
-        + minutes + ":" + seconds;
-    document.getElementById("timerWin").innerHTML = hours + ":"
-        + minutes + ":" + seconds;
-    //   document.getElementById("timerWin").innerHTML = "bananas";
-}, 1000);
+// const x = setInterval(function () {
+//     // Get today's date and time
+//     let now = new Date().getTime();
+//     // Find the distance between now and the count down date
+//     const distance = countDownDate - now;
+//     // Time calculations for days, hours, minutes and seconds
+//     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     // Output the result in an element with id="demo"
+//     document.getElementById("timerFail").innerHTML = hours + ":"
+//         + minutes + ":" + seconds;
+//     document.getElementById("timerWin").innerHTML = hours + ":"
+//         + minutes + ":" + seconds;
+//     //   document.getElementById("timerWin").innerHTML = "bananas";
+// }, 1000);
 
 // darkmode 
 
@@ -240,7 +294,7 @@ let darkModeToggle = 0;
 
 let body = document.querySelector('body');
 let square = document.querySelectorAll('.square');
-let box = document.querySelector('.box');
+let box = document.querySelector('.grid-box');
 let score = document.querySelectorAll('.score');
 let text = document.querySelector('h1');
 // sun.style.visibility = 'hidden';
@@ -258,18 +312,27 @@ function darkMode() {
         text.style.color = "#666666";
         rootImage.style.setProperty('--color-main', '#666666');
         rootImage.style.setProperty('--modal-content-color', '#666666');
-        darkModeButton.style.background = '#666666';
-        how.style.background = '#666666';
+        darkModeButton.style.color = '#666666';
         darkModeToggle = 1;
     }else if (darkModeToggle === 1){
         console.log("turning off Dark mode")
         body.style.background = "whitesmoke";
         body.style.backgroundImage = "linear-gradient(139deg, #ffffff 2.38%, #f5f5f5 2.38%, #f5f5f5 50%, #ffffff 50%, #ffffff 52.38%, #f5f5f5 52.38%, #f5f5f5 100%)";
         body.style.backgroundSize = "32.01px 27.83px";
+        text.style.color = "black";
         rootImage.style.setProperty('--color-main', 'whitesmoke');
         rootImage.style.setProperty('--modal-content-color', 'whitesmoke');
-        darkModeButton.style.background = '#666666';
-        how.style.background = '#87ceeb';
+        darkModeButton.style.color = '#666666';
         darkModeToggle = 0;
     }
 }
+
+
+
+window.setInterval(function(){ // Set interval for checking
+    var date = new Date(); // Create a Date object to find out what time it is
+    if(date.getHours() === 23 && date.getMinutes() === 59){ // Check the time
+        console.log("shifting....")
+        shifter()
+    }
+}, 60000); // Repeat every 60000 milliseconds (1 minute)
