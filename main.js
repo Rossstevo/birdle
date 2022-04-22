@@ -53,9 +53,9 @@ const person = [
     }
 ];
 
-let todaysName = person[0].name;
-let todaysSequence = person[0].sequence;
-let todaysImage = person[0].image;
+let todaysName = person[1].name;
+let todaysSequence = person[1].sequence;
+let todaysImage = person[1].image;
 
 // const buttonShift = document.getElementById("shift")
 // buttonShift.addEventListener("click", shifter)
