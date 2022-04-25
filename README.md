@@ -25,13 +25,13 @@ I am hosting the site on Netlify.
 ## What have I learned?
 
 Loads! 
-Coding. 
+1. Coding
 I have learnt a lot about coding in Javascript. Coding quickly, effectively, and clearly. I'll admit when I started this I was certainly not the most detailed person. But now, I really see the benefit of taking time to make sure things are done right. I'm also now convinced that React would have been better. My code is repetative and the components feature of React would have made this far simpler. 
 
-Hosting a website
+2. Hosting a website
 I've never hosted a website before this and it is great fun. It feels like the site is alive. I am learning about SEO and how Google works. 
 
-UX/UI
+3. UX/UI
 MY UX/UI skills are not great, I am designing the website as I go and there is no plan, wireframe or diagram. This means I can implement ideas quickly but it also means I'm relying on peers to tell me if something doesn't look/feel very good. 
 
 
