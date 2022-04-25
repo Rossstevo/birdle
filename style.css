@@ -1,16 +1,16 @@
 :root {
   --bg-image: url("images/Kurt.png"); /*----------------------------------------------change this line daily*/
-  --color-main: #94d2bd;
+  --color-main: slategrey;
   --dm-dark: #121212;
   --dm-light: #666666;
-  --modal-content-color: #94d2bd;
+  --modal-content-color: slategrey;
   --joe-border-color: whitesmoke;
-  --joe-background-color: #94d2bd;
+  --joe-background-color: slategrey;
   --joe-secondary-color: #A9B974;
 }
 
 body {
-  background: #94d2bd;
+  background: slategrey;
   font-family: helvetica;
 }
 
