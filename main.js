@@ -27,9 +27,9 @@ const square24 = document.getElementById("square24");
 // Database. 
 const person = [
     {
-        name: "Serena Williams",
-        sequence: [square23, square2, square12, square17, square6, square3],
-        image: "serena-williams.png"
+        name: "Andy Warhol",
+        sequence: [square3, square6, square10, square16, square7, square3],
+        image: "andy.png"
     },
     {
         name: "Richard Branson",
@@ -53,9 +53,9 @@ const person = [
     }
 ];
 
-let todaysName = person[3].name;
-let todaysSequence = person[3].sequence;
-let todaysImage = person[3].image;
+let todaysName = person[0].name;
+let todaysSequence = person[0].sequence;
+let todaysImage = person[0].image;
 
 // const buttonShift = document.getElementById("shift")
 // buttonShift.addEventListener("click", shifter)
