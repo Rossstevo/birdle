@@ -9,6 +9,7 @@
     <title>Peeple</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <!-- Hi there! I'm curently looking for junior Web Dev / similar roles. Email me at Ross.w.stevenson@gmail.com ------------------>
 
@@ -19,10 +20,10 @@
     <div class="github" onclick="location.href='https://github.com/Rossstevo/birdle';"></div>
     <div class="icon-buttons">
         <button class="how-to" id="how-to">
-            <i class="material-icons" style="font-size:28px;color:grey;">help</i>
+            <i class="material-icons" style="font-size:28px;color:whitesmoke;">help</i>
         </button>
         <button class="darkmode" id="dark">
-                <i class="material-icons" style="font-size:28px;color:grey;">dark_mode</i>
+                <i class="material-icons" style="font-size:28px;color:whitesmoke;">dark_mode</i>
         </button>
     </div>
     
@@ -39,7 +40,7 @@
             </p>
             <p><strong>A new Peeple will be available each day</p></strong>
             </p>
-            <button class="how-to-button" id="got-it">close</button>
+            <button class="share close-instructions" id="got-it">close</button>
 
         </div>
     </div>
@@ -91,7 +92,7 @@
         <!----------------- input and submit button ------------------>
 
         <div class="input-container">
-            <input id="input" type="text" placeholder="Who am I?" onfocus="value=''">
+            <input id="input" type="text" placeholder="Enter guess here" onfocus="value=''">
             <div class="submit-button-container">
                 <!-- <button id="skip-button" class="skip">SKIP</button> -->
                 <button class="submit" id="button">SUBMIT/SKIP</button>
@@ -112,39 +113,39 @@
             </p>
 
             <p id="firstAttempt" class=firstAttempt>
-                <i class="material-icons" style="font-size:26px;color:green;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
             </p>
             <p id="secondAttempt" class="secondAttempt">
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:green;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
             </p>
             <p id="thirdAttempt" class=thirdAttempt>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:green;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
             </p>
             <p id="fourthAttempt" class="fourthAttempt">
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:green;">square</i>
-                <i class="material-icons" style="font-size:26px;color:grey;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-symbols-outlined" style="font-size:26px;">circle</i>
             </p>
             <p id="fifthAttempt" class="fifthAttempt">
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:green;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
             </p>
 
             <!-- watsapp text  -->
@@ -248,16 +249,17 @@
         <div class="modalFail-content">
             <span id="crossFail" class="close">&times;</span>
             <p>You ran out of lives! It's </p>
-            <h3 id="failAnswer"></h3>
+            <h4 id="failAnswer"></h4>
 
 
             <p><span class="answer" id="answer"></span></p>
             <p id="failAttempt" class="failAttempt">
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
-                <i class="material-icons" style="font-size:26px;color:red;">square</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                <i class="material-icons" style="font-size:26px;color:white;">circle</i>
+                
             </p>
             <div class="box-answer"></div>
             <!-- <div class = "fail-test">
@@ -316,3 +318,8 @@
 </body>
 
 </html>
+
+
+
+
+

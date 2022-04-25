@@ -218,18 +218,14 @@ const person = [
 const d = new Date();
 let day = d.getDate();
 
-
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
-
-
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
 let rootImage = document.querySelector(":root");
 let tileArray = todaysSequence;
-
 
 // Get image and set to be first item in the array
 
@@ -290,7 +286,7 @@ function firstTileReveal() {
   //remove start button, how-to button and toggle
   start.style.visibility = "hidden";
   submitButton.style.opacity = "1";
-
+  submitButton.className = "submit-final";
   if (toggle === false) {
   } else {
     // set current to first tile in array, hide this tile then remove it from the array
@@ -368,19 +364,19 @@ function submit() {
 
   // fill the score blocks
   if (lives === 4) {
-    one.style.background = "red";
+    one.style.background = "whitesmoke";
   }
   if (lives === 3) {
-    two.style.background = "red";
+    two.style.background = "whitesmoke";
   }
   if (lives === 2) {
-    three.style.background = "red";
+    three.style.background = "whitesmoke";
   }
   if (lives === 1) {
-    four.style.background = "red";
+    four.style.background = "whitesmoke";
   }
   if (lives < 1) {
-    five.style.background = "red";
+    five.style.background = "whitesmoke";
     modalFail.style.display = "block";
   }
 } /*-end of submit function*/
@@ -399,31 +395,6 @@ function closeModalFail() {
   modalFail.style.display = "none";
 }
 
-//countdown time
-// let dateCount = 21
-// let date = "April "+ x + ", 2022 23:59:59"
-// let countDownDate = new Date(date).getTime(); /*-----------------------------------------set timer*/
-
-// Update the count down every 1 second
-// const x = setInterval(function () {
-//     // Get today's date and time
-//     let now = new Date().getTime();
-//     // Find the distance between now and the count down date
-//     const distance = countDownDate - now;
-//     // Time calculations for days, hours, minutes and seconds
-//     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-//     // Output the result in an element with id="demo"
-//     document.getElementById("timerFail").innerHTML = hours + ":"
-//         + minutes + ":" + seconds;
-//     document.getElementById("timerWin").innerHTML = hours + ":"
-//         + minutes + ":" + seconds;
-//     //   document.getElementById("timerWin").innerHTML = "bananas";
-// }, 1000);
-
-// darkmode
-
 let darkModeToggle = 0;
 
 let body = document.querySelector("body");
@@ -432,30 +403,39 @@ let box = document.querySelector(".grid-box");
 let score = document.querySelectorAll(".score");
 let text = document.querySelector("h1");
 // sun.style.visibility = 'hidden';
-
 const darkModeButton = document.getElementById("dark");
 darkModeButton.addEventListener("click", darkMode);
 
 function darkMode() {
   if (darkModeToggle === 0) {
     console.log("turning on Dark mode");
-    body.style.background = "#222222";
+    body.style.background = "#121212";
     darkModeToggle = false;
     text.style.color = "#666666";
-    rootImage.style.setProperty("--color-main", "#666666");
+    rootImage.style.setProperty("--color-main", "#1f1b24");
     rootImage.style.setProperty("--modal-content-color", "#666666");
+    rootImage.style.setProperty("--joe-border-color", "#F2CA7F");
     darkModeButton.style.color = "#666666";
+    start.style.color = "black"
     darkModeToggle = 1;
+    for (i = 0; i < score.length; ++i) {
+      score[i].style.background = "#666666";
+    }
+    submitButton.style.color = "black"
   } else if (darkModeToggle === 1) {
     console.log("turning off Dark mode");
-    body.style.background = "whitesmoke";
-    body.style.backgroundImage =
-      "linear-gradient(139deg, #ffffff 2.38%, #f5f5f5 2.38%, #f5f5f5 50%, #ffffff 50%, #ffffff 52.38%, #f5f5f5 52.38%, #f5f5f5 100%)";
+    body.style.background = "#f2cb80";
     body.style.backgroundSize = "32.01px 27.83px";
-    text.style.color = "black";
-    rootImage.style.setProperty("--color-main", "whitesmoke");
+    text.style.color = "whitesmoke";
+    rootImage.style.setProperty("--color-main", "#f2cb80");
     rootImage.style.setProperty("--modal-content-color", "whitesmoke");
+    rootImage.style.setProperty("--joe-border-color", "whitesmoke");
     darkModeButton.style.color = "#666666";
     darkModeToggle = 0;
+    start.style.color = "whitesmoke"
+    for (i = 0; i < score.length; ++i) {
+      score[i].style.background = "var(--joe-background-color)";
+    }
+    start.style.color = "whitesmoke"
   }
 }
