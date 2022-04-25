@@ -1,16 +1,16 @@
 :root {
   --bg-image: url("images/Kurt.png"); /*----------------------------------------------change this line daily*/
-  --color-main: #f2cb80;
+  --color-main: #94d2bd;
   --dm-dark: #121212;
   --dm-light: #666666;
-  --modal-content-color: #f2cb80;
+  --modal-content-color: #94d2bd;
   --joe-border-color: whitesmoke;
-  --joe-background-color: #f2cb80;
+  --joe-background-color: #94d2bd;
   --joe-secondary-color: #A9B974;
 }
 
 body {
-  background: #f2cb80;
+  background: #94d2bd;
   font-family: helvetica;
 }
 
@@ -41,7 +41,7 @@ body {
   margin-top: 76px;
   border-radius: 0px;
 
-  box-shadow: 20px 20px 60px #ceac6c, -20px -20px 60px #ffe892;   
+  /* box-shadow: 20px 20px 60px #ceac6c, -20px -20px 60px #ffe892;    */
 
   /* box-shadow: 5px 5px 0px 1px #000000 */
 }
@@ -324,7 +324,7 @@ button:active {
   background: var(--main-color);
 
   border-radius: 50%;
-background: #F2CA7F;
+
 
 }
 
