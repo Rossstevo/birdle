@@ -395,7 +395,7 @@ function closeModalFail() {
   modalFail.style.display = "none";
 }
 
-let darkModeToggle = 0;
+// let darkModeToggle = 0;
 
 let body = document.querySelector("body");
 let square = document.querySelectorAll(".square");
