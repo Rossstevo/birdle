@@ -331,7 +331,7 @@ function darkMode() {
 
 window.setInterval(function(){ // Set interval for checking
     var date = new Date(); // Create a Date object to find out what time it is
-    if(date.getHours() === 23 && date.getMinutes() === 59){ // Check the time
+    if(date.getHours() === 14 && date.getMinutes() === 40){ // Check the time
         console.log("shifting....")
         shifter()
     }
