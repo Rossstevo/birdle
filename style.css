@@ -40,8 +40,8 @@ body {
   flex-wrap: wrap;
   margin-top: 76px;
   border-radius: 0px;
-  /* background: #f2cb80;
-  box-shadow: 20px 20px 60px #ceac6c, -20px -20px 60px #ffe892; */ 
+
+  box-shadow: 20px 20px 60px #ceac6c, -20px -20px 60px #ffe892;   
 
   /* box-shadow: 5px 5px 0px 1px #000000 */
 }
@@ -200,10 +200,11 @@ button:active {
 .icon-buttons {
   /* border: 2px solid black; */
   display: flex;
+  align-items: flex-end;
   position: absolute;
   top: 2px;
   right: 0;
-  width: 80px;
+  width: 50px;
   background: none;
 }
 
@@ -214,7 +215,6 @@ button:active {
   color: black;
   /* bottom: 30px; */
   width: 150px;
-  height: 35px;
   text-align: center;
   cursor: pointer;
   opacity: 1;
@@ -238,13 +238,11 @@ button:active {
   border: none;
   /* box-shadow: 5px 5px 0px 1px #000000 */
 }
-.darkmode {
+/* .darkmode {
   display: block;
-  /* border: 3px solid black; */
-  /* padding: 5px; */
+  
   position: relative;
   color: black;
-  /* bottom: 30px; */
   width: 40px;
   height: 35px;
   font-size: 18px;
@@ -253,8 +251,7 @@ button:active {
   cursor: pointer;
   opacity: 1;
   border: none;
-  /* box-shadow: 5px 5px 0px 1px #000000; */
-}
+} */
 
 .how-to:hover {
   opacity: 1;
