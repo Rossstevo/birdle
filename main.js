@@ -33,9 +33,9 @@ const person = [
   },
   {
     id: 1,
-    name: "Andy Warhol",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "andy.png",
+    name: "Idris Elba",
+    sequence: [square22, square18, square14, square10, square6, square3],
+    image: "idris.png",
   },
   {
     id: 2,
@@ -189,27 +189,27 @@ const person = [
   },
   {
     id: 27,
-    name: "Hilton mathews ",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Louis Theroux",
+    sequence: [square12, square19, square6, square10, square15, square3],
+    image: "theroux.png",
   },
   {
     id: 28,
-    name: "Hilton mathews ",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Simone Biles",
+    sequence: [square18, square10, square2, square4, square11, square3],
+    image: "biles.png",
   },
   {
     id: 29,
-    name: "Hilton mathews ",
+    name: "Greta Thunberg",
     sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    image: "greta.png",
   },
   {
     id: 30,
-    name: "Hilton mathews ",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Jacinda Ardern",
+    sequence: [square11, square12, square15, square16, square10, square3],
+    image: "Jacinda.png",
   },
 ];
 
@@ -221,6 +221,10 @@ let day = d.getDate();
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
+
+// let todaysName = person[1].name;
+// let todaysSequence = person[1].sequence;
+// let todaysImage = person[1].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
