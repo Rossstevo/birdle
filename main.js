@@ -190,7 +190,7 @@ const person = [
   {
     id: 27,
     name: "Louis Theroux",
-    sequence: [square12, square19, square6, square10, square15, square3],
+    sequence: [square10, square19, square6, square16, square15, square3],
     image: "theroux.png",
   },
   {
