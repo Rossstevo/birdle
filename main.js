@@ -35,7 +35,7 @@ const person = [
     id: 1,
     name: "Idris Elba",
     sequence: [square22, square18, square14, square10, square6, square3],
-    image: "idris.png",
+    image: "Idris.png",
   },
   {
     id: 2,
