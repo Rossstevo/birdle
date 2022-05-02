@@ -33,15 +33,15 @@ const person = [
   },
   {
     id: 1,
-    name: "Idris Elba",
+    name: "Steve Redgrave",
     sequence: [square22, square18, square14, square10, square6, square3],
-    image: "Idris.png",
+    image: "Sir.png",
   },
   {
     id: 2,
-    name: "Ray Mears",
+    name: "Steve Redgrave",
     sequence: [square7, square6, square23, square14, square15, square6],
-    image: "Ray.png",
+    image: "Sir.png",
   },
   {
     id: 3,
