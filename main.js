@@ -33,9 +33,9 @@ const person = [
   },
   {
     id: 1,
-    name: "Steve Redgrave",
+    name: "Rowan Atkinson",
     sequence: [square22, square18, square14, square10, square6, square3],
-    image: "Sir.png",
+    image: "Rowan.png",
   },
   {
     id: 2,
