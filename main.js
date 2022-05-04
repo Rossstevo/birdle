@@ -51,9 +51,9 @@ const person = [
   },
   {
     id: 4,
-    name: "George Washington",
-    sequence: [square6, square2, square14, square10, square15, square3],
-    image: "George.png",
+    name: "Tony Hawk",
+    sequence: [square6, square3, square15, square7, square15, square3],
+    image: "tony.png",
   },
   {
     id: 5,
