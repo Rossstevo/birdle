@@ -57,15 +57,15 @@ const person = [
   },
   {
     id: 5,
-    name: "Marilyn Monroe",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Bono",
+    sequence: [square11, square12, square17, square10, square15, square3],
+    image: "bono.png",
   },
   {
     id: 6,
-    name: "Mr Motivator",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "andy.png",
+    name: "Keira Knightly",
+    sequence: [square12, square16, square10, square15, square7, square3],
+    image: "Keira.png",
   },
   {
     id: 7,
@@ -222,9 +222,9 @@ let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
 
-// let todaysName = person[2].name;
-// let todaysSequence = person[2].sequence;
-// let todaysImage = person[2].image;
+// let todaysName = person[6].name;
+// let todaysSequence = person[6].sequence;
+// let todaysImage = person[6].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
