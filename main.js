@@ -63,7 +63,7 @@ const person = [
   },
   {
     id: 6,
-    name: "Keira Knightly",
+    name: "Keira Knightley",
     sequence: [square12, square16, square10, square15, square7, square3],
     image: "Keira.png",
   },
