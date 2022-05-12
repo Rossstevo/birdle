@@ -76,9 +76,9 @@ const person = [
   },
   {
     id: 12,
-    name: "Freddy Tool",
-    sequence: [square7, square2, square23, square14, square15, square6],
-    image: "Richard.png",
+    name: "Aretha Franklin",
+    sequence: [square14, square15, square23, square17, square2, square6],
+    image: "Aretha.png",
   },
   {
     id: 13,
