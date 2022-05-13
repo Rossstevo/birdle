@@ -201,7 +201,7 @@ let day = d.getDate();
 
 let todaysName = person[13].name;
 let todaysSequence = person[13].sequence;
-let todaysImage = person[13].image;/
+let todaysImage = person[13].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
