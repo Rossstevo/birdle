@@ -195,13 +195,13 @@ const person = [
 const d = new Date();
 let day = d.getDate();
 
-let todaysName = person[day].name;
-let todaysSequence = person[day].sequence;
-let todaysImage = person[day].image;
+// let todaysName = person[day].name;
+// let todaysSequence = person[day].sequence;
+// let todaysImage = person[day].image;
 
-// let todaysName = person[13].name;
-// let todaysSequence = person[13].sequence;
-// let todaysImage = person[13].image;
+let todaysName = person[13].name;
+let todaysSequence = person[13].sequence;
+let todaysImage = person[13].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
