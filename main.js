@@ -100,33 +100,33 @@ const person = [
   },
   {
     id: 16,
-    name: "Clarrence Mitrov",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "andy.png",
+    name: "Julius Caesar",
+    sequence: [square8, square22, square10, square16, square7, square3],
+    image: "ceasar.png",
   },
   {
     id: 17,
-    name: "Spoony Dan",
+    name: "Vincent Van Gogh",
     sequence: [square7, square2, square23, square14, square15, square6],
-    image: "Richard.png",
+    image: "vincent.png",
   },
   {
     id: 18,
-    name: "Fandangle",
-    sequence: [square2, square3, square14, square6, square15, square3],
-    image: "kayne.png",
+    name: "Pablo Picasso",
+    sequence: [square7, square3, square14, square6, square15, square3],
+    image: "Picasso.png",
   },
   {
     id: 19,
-    name: "Howard Carmichael",
-    sequence: [square6, square2, square14, square10, square15, square3],
-    image: "George.png",
+    name: "Neil Buchanan",
+    sequence: [square1, square23, square14, square10, square15, square3],
+    image: "Buchanan.png",
   },
   {
     id: 20,
-    name: "Hilton mathews ",
+    name: "Michelangelo ",
     sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    image: "Michelangelo.png",
   },
   {
     id: 21,
@@ -196,13 +196,14 @@ const d = new Date();
 let day = d.getDate();
 
 
-// let todaysName = person[day].name;
-// let todaysSequence = person[day].sequence;
-// let todaysImage = person[day].image;
+let todaysName = person[day].name;
+let todaysSequence = person[day].sequence;
+let todaysImage = person[day].image;
 
-let todaysName = person[15].name;
-let todaysSequence = person[15].sequence;
-let todaysImage = person[15].image;
+
+// let todaysName = person[20].name;
+// let todaysSequence = person[20].sequence;
+// let todaysImage = person[20].image;
 
 
 let capitalAnswer = todaysName;
