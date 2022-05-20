@@ -124,7 +124,7 @@ const person = [
   },
   {
     id: 20,
-    name: "Michelangelo ",
+    name: "Michelangelo",
     sequence: [square6, square24, square11, square10, square15, square3],
     image: "Michelangelo.png",
   },
