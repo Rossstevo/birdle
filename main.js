@@ -130,9 +130,9 @@ const person = [
   },
   {
     id: 21,
-    name: "Hilton mathews ",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Justin Trudeau",
+    sequence: [square6, square4, square11, square10, square15, square3],
+    image: "Justin.png",
   },
   {
     id: 22,
@@ -195,13 +195,13 @@ const person = [
 const d = new Date();
 let day = d.getDate();
 
-let todaysName = person[day].name;
-let todaysSequence = person[day].sequence;
-let todaysImage = person[day].image;
+// let todaysName = person[day].name;
+// let todaysSequence = person[day].sequence;
+// let todaysImage = person[day].image;
 
-// let todaysName = person[20].name;
-// let todaysSequence = person[20].sequence;
-// let todaysImage = person[20].image;
+let todaysName = person[21].name;
+let todaysSequence = person[21].sequence;
+let todaysImage = person[21].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
