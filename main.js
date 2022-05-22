@@ -142,9 +142,9 @@ const person = [
   },
   {
     id: 23,
-    name: "Hilton mathews ",
-    sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    name: "Steve Jobs",
+    sequence: [square23, square17, square16, square11, square15, square3],
+    image: "jobs.png",
   },
   {
     id: 24,
@@ -199,9 +199,6 @@ let day = d.getDate();
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
-
-
-
 
 
 let capitalAnswer = todaysName;
