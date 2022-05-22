@@ -124,7 +124,7 @@ const person = [
   },
   {
     id: 20,
-    name: "Michelangelo ",
+    name: "Michelangelo",
     sequence: [square6, square24, square11, square10, square15, square3],
     image: "Michelangelo.png",
   },
@@ -195,13 +195,11 @@ const person = [
 const d = new Date();
 let day = d.getDate();
 
+
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
 
-// let todaysName = person[23].name;
-// let todaysSequence = person[23].sequence;
-// let todaysImage = person[23].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
