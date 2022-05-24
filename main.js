@@ -196,9 +196,9 @@ const d = new Date();
 let day = d.getDate();
 
 
-// let todaysName = person[day].name;
-// let todaysSequence = person[day].sequence;
-// let todaysImage = person[day].image;
+let todaysName = person[day].name;
+let todaysSequence = person[day].sequence;
+let todaysImage = person[day].image;
 
 
 let capitalAnswer = todaysName;
