@@ -154,9 +154,9 @@ const person = [
   },
   {
     id: 25,
-    name: "Andy Warhol",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "andy.png",
+    name: "Gene Simmons",
+    sequence: [square18, square19, square16, square6, square10, square3],
+    image: "gene.png",
   },
   {
     id: 26,
@@ -199,6 +199,11 @@ let day = d.getDate();
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
+
+// let todaysName = person[25].name;
+// let todaysSequence = person[25].sequence;
+// let todaysImage = person[25].image;
+
 
 
 let capitalAnswer = todaysName;
