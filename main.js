@@ -160,9 +160,9 @@ const person = [
   },
   {
     id: 26,
-    name: "Marilyn Monroe",
+    name: "Robert Smith",
     sequence: [square6, square24, square11, square10, square15, square3],
-    image: "Marilyn.png",
+    image: "smith.png",
   },
   {
     id: 27,
@@ -199,9 +199,9 @@ let day = d.getDate();
 // let todaysSequence = person[day].sequence;
 // let todaysImage = person[day].image;
 
-let todaysName = person[25].name;
-let todaysSequence = person[25].sequence;
-let todaysImage = person[25].image;
+let todaysName = person[26].name;
+let todaysSequence = person[26].sequence;
+let todaysImage = person[26].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
