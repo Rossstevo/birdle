@@ -166,9 +166,9 @@ const person = [
   },
   {
     id: 27,
-    name: "Louis Theroux",
+    name: "Pierce Brosnan",
     sequence: [square10, square19, square6, square16, square15, square3],
-    image: "theroux.png",
+    image: "Pierce.png",
   },
   {
     id: 28,
@@ -196,15 +196,15 @@ const d = new Date();
 let day = d.getDate();
 
 
-// let todaysName = person[day].name;
-// let todaysSequence = person[day].sequence;
-// let todaysImage = person[day].image;
+let todaysName = person[day].name;
+let todaysSequence = person[day].sequence;
+let todaysImage = person[day].image;
+
+// let todaysName = person[27].name;
+// let todaysSequence = person[27].sequence;
+// let todaysImage = person[27].image;
 
 
-
-let todaysName = person[26].name;
-let todaysSequence = person[26].sequence;
-let todaysImage = person[26].image;
 
 
 
