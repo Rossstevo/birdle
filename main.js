@@ -172,15 +172,15 @@ const person = [
   },
   {
     id: 28,
-    name: "Simone Biles",
+    name: "Mark Zuckerberg",
     sequence: [square18, square10, square2, square4, square11, square3],
-    image: "biles.png",
+    image: "Mark.png",
   },
   {
     id: 29,
-    name: "Greta Thunberg",
+    name: "Tina Fey",
     sequence: [square6, square24, square11, square10, square15, square3],
-    image: "greta.png",
+    image: "tina.png",
   },
   {
     id: 30,
@@ -199,9 +199,9 @@ let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
 
-// let todaysName = person[27].name;
-// let todaysSequence = person[27].sequence;
-// let todaysImage = person[27].image;
+// let todaysName = person[28].name;
+// let todaysSequence = person[28].sequence;
+// let todaysImage = person[28].image;
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
