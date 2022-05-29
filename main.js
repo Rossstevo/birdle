@@ -4,15 +4,15 @@ let squareDivs = getSquareDivs();
 const person = [
   {
     id: 0,
-    name: "Andy Warhol",
+    name: "Alex Turner",
     sequence: [square3, square6, square10, square16, square7, square3],
-    image: "andy.png",
+    image: "alex.png",
   },
   {
     id: 1,
-    name: "Idris Elba",
-    sequence: [square22, square18, square14, square10, square6, square3],
-    image: "idris.png",
+    name: "Alex Turner",
+    sequence: [square3, square6, square10, square16, square7, square3],
+    image: "alex.png",
   },
   {
     id: 2,
@@ -184,9 +184,15 @@ const person = [
   },
   {
     id: 30,
-    name: "Jacinda Ardern",
+    name: "Hulk Hogan",
     sequence: [square11, square12, square15, square16, square10, square3],
-    image: "Jacinda.png",
+    image: "Hulk.png",
+  },
+  {
+    id: 31,
+    name: "Gary Lineker",
+    sequence: [square7, square10, square2, square11, square21, square4],
+    image: "Gary.png",
   },
 ];
 
@@ -200,9 +206,9 @@ let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
 
-// let todaysName = person[28].name;
-// let todaysSequence = person[28].sequence;
-// let todaysImage = person[28].image;
+// let todaysName = person[1].name;
+// let todaysSequence = person[1].sequence;
+// let todaysImage = person[1].image;
 
 
 
