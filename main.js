@@ -16,9 +16,9 @@ const person = [
   },
   {
     id: 2,
-    name: "Ray Mears",
+    name: "Miley Cyrus",
     sequence: [square7, square6, square23, square14, square15, square6],
-    image: "Ray.png",
+    image: "Miley.png",
   },
   {
     id: 3,
