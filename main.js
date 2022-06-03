@@ -22,9 +22,9 @@ const person = [
   },
   {
     id: 3,
-    name: "Paula Radcliffe",
-    sequence: [square2, square3, square14, square6, square15, square3],
-    image: "Paula.png",
+    name: "Tom Jones",
+    sequence: [square7, square3, square11, square15, square21, square3],
+    image: "Tom.png",
   },
   {
     id: 4,
