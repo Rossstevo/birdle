@@ -202,9 +202,9 @@ const d = new Date();
 let day = d.getDate();
 
 
-let todaysName = person[3].name;
-let todaysSequence = person[3].sequence;
-let todaysImage = person[3].image;
+let todaysName = person[day].name;
+let todaysSequence = person[day].sequence;
+let todaysImage = person[day].image;
 
 
 
