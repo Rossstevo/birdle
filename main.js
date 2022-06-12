@@ -78,7 +78,7 @@ const person = [
     id: 12,
     name: "Tim Key",
     sequence: [square6, square7, square8, square9, square2, square5],
-    image: "tom.png",
+    image: "tim.png",
   },
   {
     id: 13,
