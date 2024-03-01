@@ -2,6 +2,27 @@
 
 ![Screen Shot 2022-04-08 at 10 49 56](https://user-images.githubusercontent.com/85199675/162411736-597a9c5d-078a-448c-be63-9a5a3ada2ae0.png)
 
+
+## *Update March 2024 
+
+I'm revamping app! I'm doing some fastAPI stuff at work and I'd like to test it on a real application, watch this space!
+
+what's new? 
+ I'm now using ChatGPT to generate the data ( part of the reason I stopped maintaining the app was this took too long) 
+
+
+  to do: 
+  - make back end
+  - update app to vuejs
+
+
+<img width="157" alt="Screenshot 2024-03-01 at 22 01 02" src="https://github.com/Rossstevo/Peeple/assets/85199675/71ce0976-2d59-461d-905f-aa2149d55a2c">
+
+
+
+
+
+
 ## What is it?
 
 A simple game where users guess a famous person based on squares being revealed.
