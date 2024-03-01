@@ -1,126 +1,125 @@
 let squareDivs = getSquareDivs();
 
-
 const person = [
   {
     id: 0,
-    name: "Alex Turner",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "alex.png",
+    name: "Ariana Grande",
+    sequence: [square23, square1, square8, square23, square15, square10],
+    image: arianagrande.png,
   },
   {
     id: 1,
-    name: "Alex Turner",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "alex.png",
+    name: "Brad Pitt",
+    sequence: [square8, square14, square16, square22, square20, square20],
+    image: bradpitt.png,
   },
   {
     id: 2,
-    name: "Miley Cyrus",
-    sequence: [square7, square6, square23, square14, square15, square6],
-    image: "Miley.png",
+    name: "Beyonce",
+    sequence: [square8, square4, square1, square7, square6, square11],
+    image: beyonce.png,
   },
   {
     id: 3,
-    name: "Tom Jones",
-    sequence: [square7, square3, square11, square15, square21, square3],
-    image: "Tom.png",
+    name: "Chris Hemsworth",
+    sequence: [square6, square17, square5, square14, square18, square2],
+    image: chrishemsworth.png,
   },
   {
     id: 4,
-    name: "Art Garfunkel",
-    sequence: [square6, square3, square15, square7, square15, square3],
-    image: "art.png",
+    name: "Dwayne Johnson",
+    sequence: [square7, square21, square22, square4, square15, square24],
+    image: dwaynejohnson.png,
   },
   {
     id: 5,
-    name: "Charles Bronson",
-    sequence: [square11, square12, square17, square10, square15, square3],
-    image: "bronson.png",
+    name: "Emma Watson",
+    sequence: [square10, square11, square7, square3, square10, square7],
+    image: emmawatson.png,
   },
   {
     id: 6,
-    name: "Fred Durst",
-    sequence: [square12, square16, square10, square15, square7, square3],
-    image: "fred.png",
+    name: "Ellen DeGeneres",
+    sequence: [square4, square8, square24, square19, square18, square20],
+    image: ellendegeneres.png,
   },
   {
     id: 7,
-    name: "Jon Snow",
-    sequence: [square7, square2, square23, square14, square15, square6],
-    image: "jon.png",
+    name: "Johnny Depp",
+    sequence: [square17, square6, square9, square24, square14, square6],
+    image: johnnydepp.png,
   },
   {
     id: 8,
-    name: "Craig David",
-    sequence: [square2, square3, square14, square6, square15, square3],
-    image: "craig.png",
+    name: "Keanu Reeves",
+    sequence: [square7, square6, square13, square16, square17, square16],
+    image: keanureeves.png,
   },
   {
     id: 9,
-    name: "James Corden",
-    sequence: [square6, square8, square14, square10, square7, square3],
-    image: "james.png",
+    name: "Lady Gaga",
+    sequence: [square5, square14, square9, square24, square6, square21],
+    image: ladygaga.png,
   },
   {
     id: 10,
-    name: "Pablo Escobar",
-    sequence: [square2, square6, square10, square11, square15, square3],
-    image: "pablo.png",
+    name: "Leonardo DiCaprio",
+    sequence: [square14, square5, square3, square16, square24, square11],
+    image: "leonardodicaprio.png",
   },
   {
     id: 11,
-    name: "Ray Charles",
-    sequence: [square3, square6, square10, square16, square7, square3],
-    image: "ray.png",
+    name: "Megan Fox",
+    sequence: [square9, square24, square10, square24, square14, square15],
+    image: "meganfox.png",
   },
   {
     id: 12,
-    name: "Tim Key",
-    sequence: [square6, square7, square8, square9, square2, square5],
-    image: "tim.png",
+    name: "Oprah Winfrey",
+    sequence: [square22, square12, square8, square17, square5, square14],
+    image: "oprahwinfrey.png",
   },
   {
     id: 13,
-    name: "Terry Pratchett",
-    sequence: [square14, square17, square10, square8, square15, square3],
-    image: "Terry.png",
+    name: "Rihanna",
+    sequence: [square18, square21, square7, square2, square16, square4],
+    image: "rihanna.png",
   },
   {
     id: 14,
-    name: "Bob Ross",
-    sequence: [square17, square2, square14, square10, square15, square3],
-    image: "Bo.png",
+    name: "Robert Downey Jr.",
+    sequence: [square23, square1, square8, square22, square15, square10],
+    image: "robertdowneyjr.png",
   },
   {
     id: 15,
-    name: "Ryan Reynolds",
-    sequence: [square6, square16, square2, square9, square15, square3],
-    image: "Ryan.png",
+    name: "Scarlett Johansson",
+    sequence: [square8, square14, square16, square22, square20, square20],
+    image: "scarlettjohansson.png",
   },
   {
     id: 16,
-    name: "Julius Caesar",
-    sequence: [square8, square22, square10, square16, square7, square3],
-    image: "ceasar.png",
+    name: "Selena Gomez",
+    sequence: [square8, square4, square1, square7, square6, square11],
+    image: "selenagomez.png",
   },
   {
     id: 17,
-    name: "Vincent Van Gogh",
-    sequence: [square7, square2, square23, square14, square15, square6],
-    image: "vincent.png",
+    name: "Taylor Swift",
+    sequence: [square6, square17, square5, square14, square18, square2],
+    image: "taylorswift.png",
   },
   {
     id: 18,
-    name: "Pablo Picasso",
-    sequence: [square7, square3, square14, square6, square15, square3],
-    image: "Picasso.png",
+    name: "Tom Holland",
+    sequence: [square7, square21, square22, square4, square15, square24],
+    image: "tomholland.png",
   },
   {
     id: 19,
-    name: "Neil Buchanan",
-    sequence: [square1, square23, square14, square10, square15, square3],
-    image: "Buchanan.png",
+    name: "Zendaya",
+    sequence: [square10, square11, square7, square3, square10, square7],
+    image: "zendaya.png",
   },
   {
     id: 20,
@@ -201,15 +200,9 @@ const person = [
 const d = new Date();
 let day = d.getDate();
 
-
 let todaysName = person[day].name;
 let todaysSequence = person[day].sequence;
 let todaysImage = person[day].image;
-
-
-
-
-
 
 let capitalAnswer = todaysName;
 let imagePath = 'url("images/' + todaysImage + '")';
@@ -429,16 +422,15 @@ let text = document.querySelector("h1");
 //   }
 // }
 
-
 function getSquareDivs() {
-    let divs = [];
-    let numSquares = 24;
-  
-    // Populate divs[0] - divs[23] with square divs
-    for (let i = 0; i < numSquares; i++) {
-      let currentSquare = document.getElementById(`square${i}`);
-      divs[i] = currentSquare;
-    }
-  
-    return divs;
+  let divs = [];
+  let numSquares = 24;
+
+  // Populate divs[0] - divs[23] with square divs
+  for (let i = 0; i < numSquares; i++) {
+    let currentSquare = document.getElementById(`square${i}`);
+    divs[i] = currentSquare;
   }
+
+  return divs;
+}
